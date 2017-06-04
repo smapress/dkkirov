@@ -1,0 +1,93 @@
+/* line 2, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dke-item {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #f5f5f5;
+}
+/* line 4, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dke-item:after {
+  content: attr(data-info);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 90%;
+  color: #a9a9a9;
+}
+/* line 6, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-body {
+  padding: 15px 0;
+}
+/* line 7, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-body,
+.dk-events .dkei-footer {
+  width: 100%;
+  display: inline-block;
+}
+/* line 9, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-footer {
+  border-top: 1px solid #f5f5f5;
+}
+/* line 10, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-link {
+  display: block;
+}
+/* line 11, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-content {
+  max-height: 165px;
+  overflow: hidden;
+}
+/* line 12, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-description {
+  margin-top: 4px;
+}
+/* line 13, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-internals {
+  text-align-last: justify;
+  padding: 7px 15px;
+}
+/* line 14, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-more,
+.dk-events .dkei-info {
+  text-align: left;
+  display: inline-block;
+  color: #000;
+  font-size: 100%;
+}
+/* line 16, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-artist {
+  font-size: 100%;
+  color: #da1711;
+  line-height: 32px;
+}
+/* line 18, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-artist .dkei-link {
+  color: #da1711;
+}
+/* line 20, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-name {
+  font-size: 130%;
+  line-height: 100%;
+}
+/* line 22, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-name .dkei-link {
+  color: #000;
+}
+/* line 24, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-time,
+.dk-events .dkei-info i {
+  color: #da1711;
+}
+/* line 26, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-date {
+  margin-left: 4px;
+}
+/* line 27, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-img {
+  height: 160px;
+}
+/* line 28, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/events.scss */
+.dk-events .dkei-img-item {
+  max-height: 160px;
+}

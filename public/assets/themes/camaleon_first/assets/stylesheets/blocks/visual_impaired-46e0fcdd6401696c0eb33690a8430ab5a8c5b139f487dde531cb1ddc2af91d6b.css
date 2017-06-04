@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* line 1, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired {
+  position: relative;
+  display: none;
+  z-index: 21;
+  user-select: none;
+}
+/* line 3, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-icon {
+  margin-right: 14px;
+}
+/* line 4, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-item {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+/* line 6, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-item:hover {
+  color: #da1711;
+}
+/* line 8, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more,
+.dk-visual-impaired .dkvi-more-sub {
+  display: none;
+}
+/* line 10, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-ms-item {
+  display: inline-block;
+}
+/* line 11, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-exit {
+  position: absolute;
+  width: 26px;
+  height: 60px;
+  right: 0;
+  background: #fff;
+  box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9);
+}
+/* line 13, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-exit:after {
+  content: '✖';
+  right: 0;
+}
+/* line 14, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-exit:hover {
+  color: #da1711;
+  cursor: pointer;
+}
+/* line 17, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-colors .dkvi-more-item-title {
+  display: none;
+}
+/* line 18, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-colors .dkvi-more-sub {
+  display: block;
+}
+/* line 20, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more-color {
+  position: relative;
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 22, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more-color:before {
+  content: attr(data-num);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 23, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more-color.one {
+  background: #fff;
+  color: #000;
+  border: 1px solid #777;
+}
+/* line 24, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more-color.two {
+  background: #222;
+  color: #fff;
+  border: 1px solid transparent;
+}
+/* line 25, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-more-color.three {
+  background: #c8312c;
+  color: #fff;
+  border: 1px solid transparent;
+}
+/* line 27, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-active {
+  color: #da1711;
+}
+/* line 28, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-color-visible:before {
+  content: '\f00c';
+}
+/* line 29, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-disable {
+  color: #d9d9d9;
+  cursor: default;
+  pointer-events: none;
+}
+/* line 31, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-disable .dkvi-reset-icon:before {
+  content: '\f204';
+}
+/* line 33, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired .dkvi-reset-icon:before {
+  content: '\f205';
+}
+
+/* line 35, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired-settings {
+  border-top: 1px dashed #f5f5f5;
+}
+
+/* line 37, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired-visible .dk-visual-impaired {
+  display: block;
+}
+/* line 38, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-visual-impaired-visible .dk-navigation {
+  display: none;
+}
+
+/* line 40, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dkvi-turn-up {
+  color: #da1711;
+}
+
+/* line 42, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinOne {
+  color: #000;
+  background: #fff;
+}
+/* line 44, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinOne i,
+.dk-color-skinOne a,
+.dk-color-skinOne p,
+.dk-color-skinOne .dkei-time,
+.dk-color-skinOne .dkei-link,
+.dk-color-skinOne .dke-item:after {
+  color: #000 !important;
+}
+/* line 52, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinOne footer,
+.dk-color-skinOne .dk-header,
+.dk-color-skinOne .dk-widget,
+.dk-color-skinOne .dkei-footer,
+.dk-color-skinOne .dke-item {
+  border-color: #000 !important;
+}
+
+/* line 58, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinTwo {
+  color: #fff;
+  background: #222;
+}
+/* line 60, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinTwo i,
+.dk-color-skinTwo a,
+.dk-color-skinTwo p,
+.dk-color-skinTwo .dkei-info,
+.dk-color-skinTwo .dkei-date,
+.dk-color-skinTwo .dkei-time,
+.dk-color-skinTwo .dkei-link,
+.dk-color-skinTwo .dke-item:after {
+  color: #fff !important;
+}
+/* line 70, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinTwo footer,
+.dk-color-skinTwo .dk-header,
+.dk-color-skinTwo .dkei-footer,
+.dk-color-skinTwo .dk-widget,
+.dk-color-skinTwo .dke-item,
+.dk-color-skinTwo .dkvi-more-color {
+  border-color: #fff !important;
+}
+/* line 76, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinTwo footer,
+.dk-color-skinTwo .dk-header,
+.dk-color-skinTwo .dk-preview-head,
+.dk-color-skinTwo .dk-widget,
+.dk-color-skinTwo .ddn-down-nav,
+.dk-color-skinTwo .dkvi-exit,
+.dk-color-skinTwo .dke-item {
+  background: #222 !important;
+}
+/* line 83, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinTwo .dk-header,
+.dk-color-skinTwo .ddn-down-nav,
+.dk-color-skinTwo .dkvi-exit {
+  box-shadow: none !important;
+}
+
+/* line 87, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinThree {
+  color: #fff;
+  background: #c8312c;
+}
+/* line 89, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinThree i,
+.dk-color-skinThree a,
+.dk-color-skinThree p,
+.dk-color-skinThree .dkei-info,
+.dk-color-skinThree .dkei-date,
+.dk-color-skinThree .dkei-time,
+.dk-color-skinThree .dkei-link,
+.dk-color-skinThree .dke-item:after {
+  color: #fff !important;
+}
+/* line 99, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinThree footer,
+.dk-color-skinThree .dk-header,
+.dk-color-skinThree .dkei-footer,
+.dk-color-skinThree .dk-widget,
+.dk-color-skinThree .dke-item,
+.dk-color-skinThree .dkvi-more-color {
+  border-color: #fff !important;
+}
+/* line 105, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinThree footer,
+.dk-color-skinThree .dk-header,
+.dk-color-skinThree .dk-preview-head,
+.dk-color-skinThree .dk-widget,
+.dk-color-skinThree .ddn-down-nav,
+.dk-color-skinThree .dkvi-exit,
+.dk-color-skinThree .dke-item {
+  background: #c8312c !important;
+}
+/* line 112, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/visual_impaired.scss */
+.dk-color-skinThree .dk-header,
+.dk-color-skinThree .ddn-down-nav,
+.dk-color-skinThree .dkvi-exit {
+  box-shadow: none !important;
+}

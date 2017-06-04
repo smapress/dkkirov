@@ -1,0 +1,100 @@
+/* line 2, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .dk-desktop-nav {
+  position: static !important;
+}
+/* line 3, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-list {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+/* line 5, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-list a {
+  text-transform: uppercase;
+}
+/* line 7, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-down-nav {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 9;
+  background: #fff;
+  padding: 15px 0 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+  transition: .125s;
+  box-shadow: 0 2px 5px -1px #eaeaea;
+}
+/* line 8, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-item {
+  display: block;
+  float: left;
+  user-select: none;
+}
+/* line 10, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-item.active .ddnl-item-link, .dk-navigation .ddnl-item:hover .ddnl-item-link {
+  color: #da1711;
+}
+/* line 12, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-item:hover > .ddn-down-nav {
+  visibility: visible;
+  opacity: 1;
+}
+/* line 14, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-item-link {
+  padding: 0 25px 0 0;
+}
+/* line 15, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-sm-column-2 {
+  column-count: 2;
+}
+/* line 16, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-sm-column-3 {
+  column-count: 3;
+}
+/* line 17, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-sm-column-4 {
+  column-count: 4;
+}
+/* line 18, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-sm-column-5 {
+  column-count: 5;
+}
+/* line 19, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddn-sub-list {
+  padding: 0;
+}
+/* line 20, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-sub-item {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 22, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-sub-item a {
+  display: inline-block;
+  position: relative;
+  font-size: 90%;
+  padding: 8px 0;
+  line-height: 18px;
+  text-transform: inherit;
+  vertical-align: top;
+}
+/* line 23, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation .ddnl-sub-item a:hover {
+  color: #da1711;
+}
+/* line 25, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-navigation a {
+  color: #555;
+}
+
+/* line 27, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/navigation.scss */
+.dk-nav-action .dk-header {
+  box-shadow: 0 0 5px 1px #666;
+}

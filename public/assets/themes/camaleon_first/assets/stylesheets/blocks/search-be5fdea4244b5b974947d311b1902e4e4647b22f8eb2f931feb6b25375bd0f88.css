@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* line 3, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search {
+  position: relative;
+  display: none;
+  z-index: 21;
+}
+/* line 5, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form {
+  width: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+/* line 7, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form:before,
+.dk-search .dks-form .dksf-close {
+  position: absolute;
+  top: 0;
+}
+/* line 9, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form:before {
+  content: attr(data-title);
+  left: 0;
+  color: #7b7b7b;
+}
+/* line 10, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form .dksf-close {
+  width: 20px;
+  height: 60px;
+  right: 0;
+  background: #fff;
+  text-align: right;
+  box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9);
+}
+/* line 12, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form .dksf-close:after {
+  content: '✖';
+  right: 0;
+}
+/* line 13, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dks-form .dksf-close:hover {
+  color: #da1711;
+  cursor: pointer;
+}
+/* line 16, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search .dksf-input {
+  color: #ccc;
+  padding: 20px 14px 20px 135px;
+  line-height: normal;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: 0;
+}
+/* line 2, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/helpers/add_ons.scss */
+.dk-search .dksf-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+/* line 3, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/helpers/add_ons.scss */
+.dk-search .dksf-input:-moz-placeholder {
+  color: #ccc;
+}
+/* line 4, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/helpers/add_ons.scss */
+.dk-search .dksf-input::-moz-placeholder {
+  color: #ccc;
+}
+/* line 5, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/helpers/add_ons.scss */
+.dk-search .dksf-input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/* line 21, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search-visible .dk-header {
+  box-shadow: 0 0 5px 1px #666;
+}
+/* line 22, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search-visible .dk-search {
+  display: block;
+}
+/* line 23, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/search.scss */
+.dk-search-visible .dk-navigation {
+  display: none;
+}

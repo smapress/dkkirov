@@ -1,0 +1,3681 @@
+/* line 1, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+html {
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 5, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+body {
+  font-size: 100%;
+  color: #333;
+}
+
+/* line 10, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td, table th {
+  padding: 10px !important;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 18px;
+}
+/* line 16, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td {
+  text-align: left;
+}
+/* line 19, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th {
+  text-align: left;
+}
+/* line 21, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th.text-left {
+  text-align: left;
+}
+
+/* line 27, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+cite {
+  font-size: 18px;
+}
+
+/* line 32, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td, table th {
+  font-size: 18px;
+}
+
+/* line 37, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a, body, p {
+  color: #888;
+}
+
+/* line 41, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a:hover, abbr {
+  color: #da1711;
+}
+
+/* line 45, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a:hover, table a {
+  text-decoration: none !important;
+}
+
+/* line 49, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .item, .all_content_blog_post ul li, .commentlist li, .inner_page_content ul li, .widget li {
+  list-style: none;
+}
+
+/* line 53, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a, abbr, address, article, aside, audio, b, blockquote, body, button, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, header, hgroup, hr, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+}
+
+/* line 60, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  line-height: 1.8;
+  overflow-x: hidden;
+  background: #f7f7f7;
+}
+
+/* line 68, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#loader_body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F8F8F8;
+  z-index: 99999;
+}
+/* line 76, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#loader_body .loader-spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: #da1711;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-animation: scaleout 1s infinite ease-in-out;
+  -moz-animation: scaleout 1s infinite ease-in-out;
+  animation: scaleout 1s infinite ease-in-out;
+}
+
+/* line 94, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.logo_header, abbr {
+  position: relative;
+}
+
+/* line 98, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table {
+  background: #fff;
+  padding: 5px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid rgba(221, 226, 232, 0.5);
+}
+/* line 99, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th, table tr:nth-child(odd) td {
+  background: rgba(221, 226, 232, 0.5);
+}
+/* line 107, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table thead {
+  background-color: #263241;
+  color: #fff;
+}
+/* line 111, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th {
+  border-bottom: 1px solid rgba(221, 226, 232, 0.5);
+  border-right: 1px solid rgba(221, 226, 232, 0.5);
+  font-weight: 100;
+}
+/* line 116, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table tr {
+  border-top: 1px solid rgba(221, 226, 232, 0.5);
+  border-bottom-: 1px solid rgba(221, 226, 232, 0.5);
+  padding: 10px !important;
+}
+/* line 120, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table tr:first-child {
+  border-top: none;
+}
+/* line 123, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table tr:last-child {
+  border-bottom: none;
+}
+/* line 127, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table tfoot td.pad {
+  border: none !important;
+}
+/* line 130, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td {
+  background: #FFF;
+  font-weight: 300;
+  border-right: 1px solid rgba(221, 226, 232, 0.5);
+}
+/* line 134, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td:last-child {
+  border-right: 0;
+}
+/* line 139, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th.text-center {
+  text-align: center;
+}
+/* line 142, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table th.text-right {
+  text-align: right;
+}
+/* line 147, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td.text-left {
+  text-align: left;
+}
+/* line 150, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td.text-center {
+  text-align: center;
+}
+/* line 153, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table td.text-right {
+  text-align: right;
+}
+/* line 157, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table dt {
+  text-align: left;
+}
+
+@-webkit-keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes scaleout {
+  0% {
+    -moz-transform: scale(0);
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* line 198, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+td, th {
+  text-align: left;
+}
+
+/* line 203, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table dt {
+  float: left;
+  clear: left;
+  min-width: 150px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+/* line 209, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table dt:after {
+  content: ":";
+}
+/* line 213, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+table dd {
+  margin-left: 165px !important;
+  padding: 0 0 .5em !important;
+}
+
+/* line 219, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+big {
+  text-transform: uppercase;
+}
+
+/* line 223, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+form.post-password-form label {
+  margin-bottom: 0;
+}
+
+/* line 227, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+blockquote {
+  margin: 30px 0 30px 70px !important;
+  display: inline-block;
+  border-left: 3px solid #eff0f3;
+  padding-left: 10px;
+}
+/* line 228, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+blockquote p {
+  margin: 0 !important;
+  color: #999;
+}
+/* line 236, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+blockquote:before {
+  content: "\f10d";
+  position: absolute;
+  margin-left: -80px;
+  margin-top: 0;
+  z-index: 10000;
+  font: normal normal normal 60px/1 FontAwesome;
+}
+
+/* line 246, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+/* line 256, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+pre {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 257, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* line 266, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+td, th {
+  padding: 12px 15px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+/* line 271, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+td:first-child, th:first-child {
+  padding-left: 0;
+}
+
+/* line 275, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+td:last-child, th:last-child {
+  padding-right: 0;
+}
+
+/* line 279, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+/* line 286, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.alignnone {
+  width: 100%;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 291, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto;
+}
+
+/* line 296, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 301, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 307, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 311, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a img.alignleft, a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 314, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a img.alignleft {
+  float: left;
+}
+/* line 317, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 324, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 100%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+/* line 330, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.wp-caption.alignleft, .wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 333, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+/* line 336, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.wp-caption img {
+  border: 0;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+/* line 346, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-header, .wrapper {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 351, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+p.wp-caption-text {
+  margin: 0;
+}
+
+/* line 355, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #343334;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* line 362, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h1 {
+  line-height: 1.2;
+}
+
+/* line 366, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h2 {
+  line-height: 1.25;
+}
+
+/* line 370, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3 {
+  line-height: 1.3;
+}
+
+/* line 374, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h4 {
+  line-height: 1.35;
+}
+
+/* line 378, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h5 {
+  line-height: 1.5;
+}
+
+/* line 382, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h6 {
+  line-height: 1.6;
+}
+
+/* line 386, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+p {
+  padding: 0;
+  margin: 0 0 10px;
+  line-height: 26px;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* line 394, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_mobile_menu .mobile_primary_nav li a, .primary_nav li a {
+  font-family: sans-serif;
+}
+
+/* line 398, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 400, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .comment-form input.button, .back_to_home a, .cat_item_fut_post, .over_img, .post_lightbox .overlay, .single_related_title {
+  -webkit-transition: .15s;
+  -moz-transition: .15s;
+  -ms-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}
+
+/* line 409, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .flickr_badge_image img, .widget .tagcloud a {
+  -webkit-transition: .15s;
+  -moz-transition: .15s;
+  -ms-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}
+
+/* line 418, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input.button, .widget_search input.button, a {
+  -webkit-transition: .15s;
+  -moz-transition: .15s;
+  -ms-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}
+
+/* line 426, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+button:focus, input:focus, select:focus, textarea:focus {
+  outline: 0;
+  border: 1px solid #da1711;
+}
+
+/* line 431, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+strong {
+  color: #222;
+}
+
+/* line 435, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.main_container {
+  margin: 0;
+}
+
+/* line 439, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-header {
+  font-size: 14px;
+  background: #fff;
+  line-height: 60px;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 0 5px 1px #f3f3f3;
+  z-index: 51;
+  position: fixed;
+  top: 0;
+}
+
+/* line 450, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.logo_header {
+  display: inline-block;
+  float: left;
+}
+
+/* line 455, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.logo {
+  margin-right: 30px;
+}
+
+/* line 459, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+ul.dkm-list ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* line 464, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_mobile_menu {
+  padding: 30px;
+}
+/* line 466, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_mobile_menu .logo {
+  margin: 0 0 40px;
+  text-align: center;
+  display: block;
+}
+
+/* line 473, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_menu_button {
+  display: none;
+  float: right;
+  font-size: 17px;
+}
+/* line 477, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_menu_button .column, .mobile_menu_button .top_search {
+  float: right;
+  margin-right: 5px;
+}
+/* line 481, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_menu_button button {
+  padding: 6px 10px;
+  color: #acacac;
+  background-color: #f8f7f7;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: initial;
+  height: inherit;
+  border: 0;
+  margin-right: 5px;
+}
+
+/* line 494, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_primary_nav ul ul {
+  margin-left: 20px;
+}
+
+/* line 498, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_mobile_menu .mobile_primary_nav li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 0;
+}
+/* line 504, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_mobile_menu .mobile_primary_nav li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 509, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_social_and_search {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+/* line 516, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_social_icon span {
+  padding: 0 5px;
+}
+
+/* line 520, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_menu_button .search_toggle_top {
+  top: 83px;
+  right: 0;
+  width: 100%;
+}
+/* line 524, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.mobile_menu_button .search_toggle_top form {
+  width: 100%;
+  max-width: inherit;
+}
+
+/* line 530, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+/* line 541, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 552, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 563, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 576, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul ul {
+  display: none;
+}
+/* line 580, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul > li.has-sub > a:after, #mobile_primary_nav ul > li.has-sub > a:before {
+  position: absolute;
+  display: block;
+  background: #fff;
+  content: "";
+}
+/* line 589, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav > ul > li.active > ul {
+  display: none;
+}
+
+/* line 594, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.align-right {
+  float: right;
+}
+
+/* line 599, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav > ul > li > a {
+  padding: 12px 0;
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+/* line 609, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul > li.has-sub > a:after {
+  right: 4px;
+  top: 13px;
+  z-index: 5;
+  height: 10px;
+  width: 2px;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -ms-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+/* line 621, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul > li.has-sub > a:before {
+  right: 0;
+  top: 17px;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -ms-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+/* line 635, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_and_search, .social_icon {
+  display: inline-block;
+}
+
+/* line 639, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search {
+  display: inline-block;
+}
+/* line 641, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search form {
+  display: inline-block;
+}
+
+/* line 648, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul > li.has-sub.open > a:after, #mobile_primary_nav ul > li.has-sub.open > a:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 657, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul ul li a {
+  padding: 14px 22px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+/* line 668, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul ul ul li a {
+  padding-left: 32px;
+}
+/* line 672, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul ul > li.has-sub > a:after {
+  top: 16px;
+  right: 4px;
+  background: #ddd;
+}
+/* line 677, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#mobile_primary_nav ul ul > li.has-sub > a:before {
+  top: 20px;
+  background: #ddd;
+}
+
+/* line 685, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_and_search {
+  float: right;
+  position: relative;
+}
+
+/* line 690, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon {
+  float: right;
+  line-height: 34px;
+}
+/* line 691, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon i {
+  color: #acacac;
+}
+/* line 693, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon i:hover {
+  color: #da1711;
+}
+/* line 699, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon span {
+  margin-right: 14px;
+}
+
+/* line 704, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-toolbar {
+  text-align: right;
+  user-select: none;
+}
+/* line 706, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-toolbar .dkt-icons {
+  margin-left: 14px;
+  font-size: 14px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+/* line 709, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search {
+  text-align: right;
+  float: right;
+}
+/* line 712, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search span {
+  font-size: 13px;
+  float: right;
+  margin-left: -15px;
+  background-color: #da1711;
+  border-radius: 100%;
+  color: #fff;
+  padding: 2px 7px;
+  margin-top: 3px;
+  position: relative;
+}
+/* line 723, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search form:focus {
+  border: none;
+}
+/* line 726, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search input {
+  background-color: #f1f2f6;
+  border-radius: 100px;
+  padding: 6px 19px 6px 10px;
+  font-size: 12px;
+}
+/* line 727, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.top_search input:focus {
+  border: none;
+}
+
+/* line 737, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-preview-head {
+  height: 150px;
+  margin: 50px 0 35px;
+  background: #fff;
+}
+
+/* line 743, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.big_slider {
+  margin: 0;
+  position: relative;
+}
+
+/* line 748, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.img_item_big_slider, .meta_item_big_slider {
+  max-height: 470px;
+  min-height: 470px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* line 757, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_meta_item_big_slider {
+  max-height: 400px;
+  min-height: 400px;
+  background-color: #fff;
+  height: 100%;
+  display: inline-block;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+/* line 767, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#big_slider .img_item_big_slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 773, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.title_item_big_slider {
+  margin-bottom: 20px;
+}
+/* line 775, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.title_item_big_slider:after {
+  content: '';
+  height: 2px;
+  width: 100px;
+  background-color: #da1711;
+  display: block;
+  margin-top: 30px;
+}
+
+/* line 785, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.auth_meta, .link_auth_cont {
+  display: inline-block;
+}
+
+/* line 789, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contant_item_big_slider {
+  margin: 30px 0 20px;
+}
+
+/* line 793, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_big_slider {
+  margin-bottom: 20px;
+}
+/* line 795, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_big_slider span a {
+  margin-right: 5px;
+  color: #da1711;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 800, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_big_slider span a:hover {
+  color: #455564;
+}
+
+/* line 806, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a.read_more {
+  padding: 5px 15px;
+  color: #da1711;
+  float: left;
+}
+/* line 810, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+a.read_more:hover {
+  color: #a90000;
+}
+
+/* line 815, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.auth_meta {
+  border-top: 1px solid #eff0f3;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 30px;
+  line-height: 30px;
+}
+
+/* line 823, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.auth_cont {
+  float: left;
+  position: relative;
+}
+
+/* line 828, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.auth_meta .img_auth_cont {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 837, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.img_auth_cont img {
+  width: 100%;
+  vertical-align: baseline;
+}
+
+/* line 842, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_auth_cont a {
+  color: #455564;
+  font-weight: 600;
+}
+/* line 845, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_auth_cont a:hover {
+  color: #da1711;
+}
+
+/* line 850, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.auth_item_comment, .auth_item_time {
+  float: right;
+  color: #7b7b7b;
+  margin-left: 20px;
+}
+
+/* line 856, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.big_slider .owl-theme .owl-controls {
+  margin-top: -30px;
+  text-align: center;
+  position: relative;
+}
+
+/* line 862, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.fut_post {
+  background-color: #343334;
+  margin-bottom: 50px;
+}
+
+/* line 867, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_fut_post {
+  padding: 20px 0;
+}
+/* line 869, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_fut_post img {
+  width: 100%;
+}
+
+/* line 874, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area h3, .fut_post h4.title_fut_post {
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* line 879, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area h3:after {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #da1711;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 889, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.fut_post h4.title_fut_post:after {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #da1711;
+  display: block;
+  margin-top: 5px;
+}
+/* line 897, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.fut_post .owl-buttons {
+  position: absolute;
+  top: -55px;
+  right: 15px;
+  text-transform: capitalize;
+}
+/* line 903, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.fut_post .owl-pagination {
+  display: none;
+}
+
+/* line 908, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_fut_post {
+  position: absolute;
+  padding: 0;
+  margin-top: -30px;
+  margin-left: 20px;
+  z-index: 101;
+}
+
+/* line 916, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.over_img {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.49);
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+/* line 927, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.item_slider_fut_post:hover .over_img {
+  background-color: transparent;
+}
+/* line 930, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.item_slider_fut_post:hover .cat_item_fut_post {
+  margin-top: 20px;
+}
+/* line 934, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.item_slider_fut_post .cat_item_fut_post a {
+  padding: 5px 15px;
+  background-color: #da1711;
+  color: #fff;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+/* line 943, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area, .item_slider_fut_post .cat_item_fut_post a:hover {
+  background-color: #343334;
+}
+
+/* line 947, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.meta_item_fut_post {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+/* line 951, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.meta_item_fut_post h4 {
+  margin: 0;
+  padding: 0;
+}
+/* line 955, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.meta_item_fut_post a {
+  color: #fff;
+}
+/* line 957, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.meta_item_fut_post a:hover {
+  color: #da1711;
+}
+
+/* line 963, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.time_item_fut_post {
+  color: #ccc;
+}
+
+/* line 967, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area {
+  margin-bottom: 50px;
+}
+
+/* line 971, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_blog_widget_top_area {
+  padding: 30px 5px;
+  position: relative;
+  margin: 0;
+}
+
+/* line 977, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.box_banner_widget {
+  max-height: 300px;
+  min-height: 280px;
+  height: 280px;
+  position: relative;
+  width: 100%;
+}
+/* line 983, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.box_banner_widget .box_banner_img {
+  position: relative;
+  height: 100%;
+  width: 330px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 992, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.box_cat_link {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* line 1002, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area .box_banner_widget .box_banner_img {
+  width: 100%;
+}
+
+/* line 1006, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.box_banner_widget h3 {
+  margin: 0;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+/* line 1018, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.quote_post .quote_inner cite {
+  text-transform: capitalize;
+}
+
+/* line 1023, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget h4, .dk-widget li {
+  text-transform: capitalize;
+}
+
+/* line 1028, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_widget_top_area h3:after {
+  margin: 10px auto;
+}
+
+/* line 1032, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.banner_widget:hover .over_img {
+  background-color: transparent;
+}
+
+/* line 1036, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_blog_post a {
+  margin-right: 5px;
+}
+/* line 1038, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_blog_post a i {
+  margin-right: 5px;
+}
+
+/* line 1043, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_auth_meta i {
+  margin-right: 5px;
+}
+
+/* line 1047, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+article.blog_post {
+  display: block;
+  border-bottom: 1px solid #ecedee;
+  background-color: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+/* line 1053, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+article.blog_post .top_blog_post {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+}
+/* line 1058, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+article.blog_post .content_blog_post {
+  padding: 20px 20px 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 1065, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.media_blog_post {
+  max-height: 570px;
+  overflow: hidden;
+}
+/* line 1068, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.media_blog_post img {
+  width: 100%;
+}
+
+/* line 1073, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_post_title a {
+  color: #343334;
+}
+/* line 1075, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.blog_post_title a:hover {
+  color: #da1711;
+}
+
+/* line 1080, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_blog_post {
+  float: right;
+  display: inline-block;
+}
+
+/* line 1085, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon_share {
+  text-align: right;
+  float: right;
+  display: inline-block;
+}
+
+/* line 1091, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_blog_post a {
+  font-size: 13px;
+}
+
+/* line 1095, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.meta_blog_post .auth_meta {
+  line-height: normal;
+}
+
+/* line 1099, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_auth_meta {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  line-height: 30px;
+}
+
+/* line 1106, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.all_content_blog_post {
+  margin-bottom: 25px;
+}
+/* line 1108, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.all_content_blog_post ul {
+  margin-left: 45px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* line 1112, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.all_content_blog_post ul li:before {
+  content: "";
+  display: block;
+  float: left;
+  margin-top: .75em;
+  margin-left: -20px;
+  width: 5px;
+  height: 5px;
+  vertical-align: middle;
+  background-color: #da1711;
+}
+
+/* line 1127, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share span, .post_icon_shere .share_toggle {
+  width: 35px;
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 35px;
+  text-align: center;
+}
+
+/* line 1136, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.social_icon_share span {
+  margin-left: 10px;
+}
+
+/* line 1140, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere {
+  float: left;
+}
+/* line 1142, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share span {
+  display: inline-block;
+  height: 35px;
+  margin-right: 3px;
+}
+/* line 1146, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share span a {
+  display: block;
+  border-radius: 100%;
+  height: 100%;
+  border: 1px solid #acacac;
+  color: #acacac;
+}
+/* line 1152, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share span a:hover {
+  background-color: #da1711;
+  border: 1px solid #da1711;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 1160, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .share_toggle {
+  display: inline-block;
+  height: 35px;
+  margin-left: 10px;
+  float: left;
+  border-radius: 100%;
+  border: 1px solid #acacac;
+}
+/* line 1167, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .share_toggle i {
+  display: block;
+  height: 100%;
+  line-height: 35px;
+  color: #acacac;
+}
+/* line 1174, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  display: inline-block;
+}
+/* line 1188, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_icon_shere .post_share.share_active {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 1200, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_slider .slider_item_big_slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 1206, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.gallery .owl-theme .owl-controls {
+  margin-top: -40px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 1213, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.owl-theme .owl-controls .owl-page span {
+  background: inherit;
+  border: 2px solid #da1711;
+  opacity: 1;
+}
+/* line 1218, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.owl-theme .owl-controls .owl-page.active span {
+  background: #da1711;
+  border: 2px solid #da1711;
+}
+
+/* line 1224, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_media_blog_post {
+  background-color: #455564;
+  color: #fff;
+  padding: 30px;
+}
+
+/* line 1230, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_icon_post_format, .quote_icon_post_format {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  margin-top: -40px;
+}
+
+/* line 1237, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_icon_post_format i, .quote_icon_post_format i {
+  font-size: 50px;
+  opacity: .1;
+}
+
+/* line 1243, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_media_blog_post a, .link_media_blog_post h3 {
+  color: #fff;
+  line-height: inherit;
+}
+/* line 1247, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.link_media_blog_post span:before {
+  font: normal normal normal 15px/1 FontAwesome;
+  content: "\f0c1";
+  color: #da1711;
+  left: 0;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+
+/* line 1258, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.quote_media_blog_post {
+  background-color: #455564;
+  color: #fff;
+  padding: 30px;
+}
+
+/* line 1265, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.quote_post .quote_content_inner {
+  font-style: italic;
+  line-height: 30px;
+  z-index: 2;
+  text-transform: capitalize;
+  color: #fff;
+}
+/* line 1272, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.quote_post .quote_inner cite {
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 1275, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.quote_post .quote_inner cite:before {
+  content: "";
+  background-color: #da1711;
+  left: 0;
+  width: 2px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+
+/* line 1289, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_lightbox .media_blog_post {
+  position: relative;
+}
+/* line 1292, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_lightbox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+}
+/* line 1304, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_lightbox .overlay:before {
+  content: '\f00e';
+  font-family: Fontawesome;
+  position: absolute;
+  font-size: 14px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  top: 50%;
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  color: #303030;
+  text-align: center;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 1324, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_lightbox .image_link {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+/* line 1332, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_lightbox .overlay:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+/* line 1341, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.pagination_post ul.pager {
+  margin: 20px 0 50px;
+}
+/* line 1343, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.pagination_post ul.pager a:hover {
+  border: 1px solid #da1711;
+}
+
+/* line 1348, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.ads_block {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 1351, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.ads_block img {
+  max-width: 100%;
+}
+
+/* line 1356, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.sidebar .dk-widget {
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* line 1363, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget h4 {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+/* line 1369, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_title:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #da1711;
+  margin-top: 0;
+  margin-left: -20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 1381, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget li {
+  border-bottom: 1px solid rgba(221, 226, 232, 0.5);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 1388, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget ol, .dk-widget ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 1392, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/* line 1397, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-widget .widget_categories li span {
+  margin-left: 10px;
+}
+
+/* line 1402, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_archive li i, .widget_categories li i {
+  float: right;
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 1410, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_about_me .my_pic img {
+  width: 100%;
+}
+/* line 1413, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_about_me .my_name h4 {
+  margin: 10px 0;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* line 1421, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input, .widget_search input {
+  padding: 6px 19px 6px 10px;
+  font-size: 12px;
+}
+
+/* line 1427, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_about_me .my_words p {
+  margin: 0;
+}
+/* line 1430, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_about_me .social_icon a {
+  display: block;
+  border-radius: 2px;
+  background-color: #CCD1D9;
+  height: 100%;
+  color: #fff;
+}
+/* line 1436, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_about_me .social_icon a:hover {
+  color: #fff !important;
+}
+
+/* line 1442, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget.widget_twitter li a {
+  color: #40bff5;
+}
+
+/* line 1446, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile {
+  display: inline-block;
+  width: 100%;
+}
+/* line 1449, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile .widget_title {
+  position: relative;
+  float: left;
+  margin: 0 !important;
+}
+/* line 1450, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile .widget_title:after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #e4e4e4;
+  display: block;
+  float: right;
+  margin-top: 14px;
+  margin-left: 16px;
+}
+/* line 1464, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile .social-icons {
+  float: right;
+  margin-right: -4px;
+}
+/* line 1467, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile .social-icons a {
+  text-align: center;
+  color: #CCD1D9;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  border: 1px solid #CCD1D9;
+  display: inline-block;
+  margin-left: 3px;
+}
+/* line 1477, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_ashmawi_social_profile .social-icons a:hover {
+  border: 1px solid #da1711;
+  color: #da1711;
+}
+
+/* line 1485, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_search input {
+  background-color: #f1f2f6;
+  border-radius: 100px;
+  min-width: 205px;
+  border: 1px solid transparent;
+}
+/* line 1490, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_search input.button {
+  background-color: #da1711;
+  color: #fff;
+  max-width: 100px;
+  min-width: inherit;
+}
+/* line 1495, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_search input.button:hover {
+  background-color: #343334;
+}
+
+/* line 1501, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_post .widget_post_thumbnail {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+/* line 1508, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_post .widget_post_thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1514, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.hamzh_flickr {
+  display: inline-block;
+}
+
+/* line 1518, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .flickr_badge_image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  background-color: #000;
+}
+/* line 1523, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .flickr_badge_image:nth-child(4n+0) {
+  margin-right: 0;
+}
+/* line 1526, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .flickr_badge_image img {
+  width: 100%;
+  height: 100%;
+}
+/* line 1529, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .flickr_badge_image img:hover {
+  -webkit-opacity: .8;
+  -moz-opacity: .8;
+  -ms-opacity: .8;
+  -o-opacity: .8;
+  opacity: .8;
+}
+
+/* line 1539, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_comments .widget_post_thumbnail {
+  float: left;
+  height: 80px;
+  margin-right: 10px;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+/* line 1548, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar, .ads_w img, .slid_widget_dribbble img {
+  width: 100%;
+}
+
+/* line 1552, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_calendar {
+  width: 100%;
+}
+/* line 1554, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_calendar table {
+  width: 100%;
+}
+
+/* line 1559, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input, .widget_site_footer {
+  width: 100%;
+}
+
+/* line 1563, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_comments .comment-author a {
+  color: #BCC2CE;
+}
+
+/* line 1567, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#footer .widget_recent_comments .comment-author a {
+  color: #fff;
+}
+
+/* line 1571, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_comments .comment-c {
+  display: block;
+  font-weight: 600;
+}
+
+/* line 1576, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social, .single_post .meta_blog_post, .widget .tagcloud a, .widget_site_footer {
+  display: inline-block;
+}
+
+/* line 1580, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_comments li a {
+  font-weight: 600;
+}
+
+/* line 1584, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.ads_wid {
+  text-align: center;
+}
+
+/* line 1589, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login form {
+  margin: 0;
+}
+/* line 1592, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input {
+  background-color: #f1f2f6;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+/* line 1596, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input.button {
+  background-color: #da1711;
+  color: #fff;
+  margin-bottom: 0;
+}
+/* line 1600, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_login input.button:hover {
+  background-color: #343334;
+  color: #fff;
+}
+
+/* line 1608, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .tagcloud a {
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #f1f2f6;
+  color: #343334;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border-radius: 100px;
+}
+/* line 1619, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget .tagcloud a:hover {
+  background-color: #da1711;
+  color: #fff !important;
+}
+
+/* line 1626, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_newsletter form {
+  margin-bottom: 0;
+}
+/* line 1629, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_newsletter input {
+  margin-bottom: 20px;
+}
+/* line 1633, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_newsletter button i, .widget_newsletter button span {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* line 1641, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_calendar a {
+  color: #da1711;
+}
+/* line 1644, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_calendar caption {
+  padding-bottom: 8px;
+  color: #777;
+  text-align: left;
+}
+
+/* line 1652, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td {
+  border-right: 2px solid #fff;
+  text-align: center;
+}
+/* line 1656, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar thead {
+  font-size: 10px;
+}
+/* line 1657, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar thead th {
+  border-right: 2px solid #fff;
+  text-align: center;
+  padding: 6px 0;
+  background-color: #EDEDED;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  border-bottom: 2px solid #ecedee;
+}
+/* line 1669, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td:last-child, #wp-calendar thead th:last-child {
+  border-right: 0;
+}
+/* line 1672, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody {
+  color: #aaa;
+}
+/* line 1674, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td {
+  background-color: #f5f5f5;
+  padding: 7px;
+  font-weight: 300;
+  color: #888;
+}
+/* line 1679, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td:hover {
+  background-color: #fff;
+}
+/* line 1682, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td.pad {
+  border-color: transparent;
+}
+/* line 1686, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody tr:first-child td.pad {
+  border-right: 2px solid #fff;
+}
+/* line 1689, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td.pad:hover {
+  background-color: transparent;
+}
+/* line 1692, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody .pad {
+  background: 0 0;
+}
+/* line 1697, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+}
+/* line 1702, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+/* line 1708, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#wp-calendar tbody td a {
+  font-weight: 600;
+}
+
+/* line 1713, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_container caption {
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 12px;
+  background-color: #26BDEF;
+  padding: 2px 12px;
+  color: #fff;
+}
+
+/* line 1725, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.copyright a, .share_article .social {
+  font-weight: 600;
+}
+
+/* line 1730, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_rss a, .widget_rss cite {
+  font-weight: 600;
+}
+
+/* line 1735, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.site_footer.dark_footer #wp-calendar thead th {
+  background-color: #303030;
+  border-bottom-color: #444;
+  border-right-color: #111;
+  color: #A9A9A9;
+}
+
+/* line 1742, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.conmments_block, .share_article, .single_post_nav, .single_title_and_meta {
+  border-bottom: 1px solid #eff0f3;
+}
+
+/* line 1746, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.site_footer.dark_footer #wp-calendar tbody td {
+  background-color: #222;
+  border-right-color: #111;
+}
+/* line 1749, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.site_footer.dark_footer #wp-calendar tbody td.pad {
+  background-color: transparent;
+}
+
+/* line 1754, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.copyright, footer.site_footer {
+  border-top: 1px solid #f5f5f5;
+}
+
+/* line 1756, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.site_footer.dark_footer #wp-calendar tbody tr:first-child td.pad {
+  border-right: 2px solid #111;
+}
+
+/* line 1760, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_recent_post h5 {
+  margin: 0;
+}
+
+/* line 1764, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_post_info .post_meta {
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* line 1767, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_post_info .post_meta span {
+  margin-right: 10px;
+}
+
+/* line 1772, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.logo_widget {
+  margin: 20px 0;
+}
+
+/* line 1776, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_text .textwidget {
+  overflow: hidden;
+}
+
+/* line 1780, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_social_icon {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 1783, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_social_icon span {
+  padding: 5px;
+}
+
+/* line 1788, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.slid_widget_dribbble li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1793, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_archive select {
+  padding: 7px;
+  border-radius: 100px;
+  width: 100%;
+}
+
+/* line 1799, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+footer.site_footer {
+  line-height: 30px;
+}
+
+/* line 1803, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.widget_site_footer {
+  padding: 20px;
+}
+
+/* line 1807, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.copyright {
+  padding: 5px 20px;
+  text-align: center;
+}
+
+/* line 1812, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist ul.children, .conmments_block, .share_article, .single_post_nav {
+  border-top: 1px solid #eff0f3;
+}
+
+/* line 1816, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.copyright p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 1821, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.hmztop {
+  background-color: #ffffff;
+  background-image: url(images/arrow.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 999999999999999;
+  width: 40px;
+  height: 40px;
+  text-indent: -99999px;
+  position: fixed;
+  bottom: -100px;
+  right: 1%;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+  overflow: auto;
+  border-radius: 100%;
+}
+/* line 1841, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.hmztop:hover {
+  background-color: #da1711;
+}
+
+/* line 1847, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+footer .widget .tagcloud a {
+  line-height: normal;
+}
+/* line 1850, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+footer .widget_title:before {
+  margin-left: 0;
+}
+
+/* line 1855, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_title_and_meta {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* line 1861, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post .media_blog_post {
+  margin-bottom: 0;
+}
+/* line 1864, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post .inner_blog_post .tagcloud a {
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #f1f2f6;
+  color: #343334;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-top: 0;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+/* line 1879, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav p, h5.author-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 1885, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post .inner_blog_post .tagcloud a:hover {
+  background-color: #da1711;
+  color: #fff !important;
+}
+/* line 1889, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post .col-md-10 {
+  margin: 0 100px auto;
+  float: none;
+  position: relative;
+}
+
+/* line 1896, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_content_container + .share_article {
+  width: auto;
+  max-width: 100%;
+  margin: 0 0 50px;
+  float: none;
+  text-align: center;
+}
+
+/* line 1904, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article {
+  background-color: #f8f9fc;
+  padding: 15px;
+  text-align: center;
+}
+/* line 1908, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article.simple {
+  padding: 0;
+  background: 0 0;
+  text-align: left;
+}
+/* line 1913, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article h6 {
+  margin-bottom: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+/* line 1918, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social {
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 14px 0 50px;
+  position: relative;
+  border-radius: 100px;
+  width: 49%;
+  margin: 0 0 4px;
+  text-align: right;
+}
+/* line 1928, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social .fa {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 1937, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.facebook {
+  background: #3b5998;
+}
+/* line 1939, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.facebook:hover {
+  background: #324c82;
+  color: #fff !important;
+}
+/* line 1944, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.google-plus {
+  background: #dd4b39;
+}
+/* line 1946, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.google-plus:hover {
+  background: #d33724;
+  color: #fff !important;
+}
+/* line 1951, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.linkedin {
+  background: #007bb6;
+}
+/* line 1953, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.linkedin:hover {
+  background: #006697;
+  color: #fff !important;
+}
+/* line 1958, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.pinterest {
+  background: #cb2027;
+}
+/* line 1960, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.pinterest:hover {
+  background: #b11c22;
+  color: #fff !important;
+}
+/* line 1965, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.twitter {
+  background: #00aced;
+}
+/* line 1967, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.twitter:hover {
+  background: #0096ce;
+  color: #fff !important;
+}
+/* line 1972, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.instagram {
+  background: #3f729b;
+}
+/* line 1974, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.instagram:hover {
+  background: #366285;
+  color: #fff !important;
+}
+/* line 1979, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.vk {
+  background: #45668e;
+}
+/* line 1981, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.vk:hover {
+  background: #3b5779;
+  color: #fff !important;
+}
+/* line 1986, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.tumblr {
+  background: #35465c;
+}
+/* line 1988, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.tumblr:hover {
+  background: #2a3749;
+  color: #fff !important;
+}
+/* line 1993, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.xing {
+  background: #cfdc00;
+}
+/* line 1995, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.xing:hover {
+  background: #b2bd00;
+  color: #fff !important;
+}
+/* line 2000, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.soundcloud {
+  background: #f80;
+}
+/* line 2002, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.soundcloud:hover {
+  background: #e07800;
+  color: #fff !important;
+}
+/* line 2007, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.dribbble {
+  background: #ea4c89;
+}
+/* line 2009, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.dribbble:hover {
+  background: #e73177;
+  color: #fff !important;
+}
+/* line 2014, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.youtube {
+  background: #e52d27;
+}
+/* line 2016, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.youtube:hover {
+  background: #d41f1a;
+  color: #fff !important;
+}
+/* line 2021, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.spotify {
+  background: #7ab800;
+}
+/* line 2023, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.spotify:hover {
+  background: #690;
+  color: #fff !important;
+}
+/* line 2028, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.behance {
+  background: #1769ff;
+}
+/* line 2030, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.behance:hover {
+  background: #0057f7;
+  color: #fff !important;
+}
+/* line 2035, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.deviantart {
+  background: #4e6252;
+}
+/* line 2037, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.share_article .social.deviantart:hover {
+  background: #405144;
+  color: #fff !important;
+}
+
+@media only screen and (min-width: 48.063em) {
+  /* line 2046, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+  .share_article {
+    padding: 20px;
+    text-align: left;
+  }
+  /* line 2049, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+  .share_article h6 {
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 48.063em) {
+  /* line 2057, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+  .share_article .social {
+    width: auto;
+    margin: 0;
+  }
+}
+/* line 2063, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav {
+  background-color: #f8f9fc;
+  padding: 20px;
+}
+/* line 2066, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav a {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+}
+/* line 2071, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav .pull-right a {
+  padding: 0 30px 0 0;
+  text-align: right;
+}
+/* line 2075, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav p {
+  margin: 0;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 14px;
+}
+/* line 2081, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav i {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  font-size: 10px;
+}
+/* line 2087, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav .pull-right i {
+  left: auto;
+  right: 0;
+}
+/* line 2091, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_post_nav b {
+  display: block;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/* line 2099, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_info {
+  display: inline-block;
+  padding: 50px 20px;
+}
+
+/* line 2104, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_image {
+  overflow: hidden;
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  text-align: center;
+}
+/* line 2111, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_image a {
+  overflow: hidden;
+  display: block;
+  max-width: 120px;
+  border-radius: 50%;
+}
+/* line 2117, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_image img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* line 2123, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_name {
+  overflow: hidden;
+  float: left;
+  padding: 21px 15px 0;
+  text-align: left;
+}
+
+/* line 2130, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_info_label {
+  line-height: 20px;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/* line 2136, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h5.author-name {
+  margin: 0 0 9px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* line 2142, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_icons a {
+  margin: 0 5px 10px;
+}
+
+/* line 2146, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_bio {
+  overflow: hidden;
+  padding-top: 19px;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+/* line 2153, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_related_posts {
+  padding: 50px 20px 70px;
+}
+
+/* line 2157, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_title {
+  margin-bottom: 20px;
+}
+/* line 2158, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_title h4 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #263241;
+}
+/* line 2163, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.post_title h4:after {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #da1711;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 2175, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.single_related_title {
+  background-color: rgba(0, 0, 0, 0.49);
+  position: absolute;
+  bottom: -30px;
+  color: #ddd;
+  width: 100%;
+  padding: 10px;
+}
+
+/* line 2184, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block {
+  display: none;
+  margin-bottom: 0;
+}
+/* line 2185, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .item {
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 2186, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .item:hover .single_related_title {
+  bottom: 0;
+}
+/* line 2192, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 2200, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block h5 {
+  margin-bottom: 0;
+}
+/* line 2203, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block a {
+  color: #fff;
+}
+/* line 2206, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .owl-pagination {
+  display: none;
+}
+/* line 2209, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .owl-buttons {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  text-transform: capitalize;
+}
+/* line 2215, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#post_related_block .owl-controls {
+  margin: 0;
+}
+
+/* line 2220, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.conmments_block {
+  background-color: #f8f9fc;
+  padding: 20px 20px 50px;
+}
+
+/* line 2225, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comments_post_title {
+  text-align: center;
+  margin-top: -37px;
+  margin-bottom: 40px;
+}
+/* line 2229, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comments_post_title h4 {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+  background-color: #da1711;
+  padding: 0 40px;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 30px;
+}
+
+/* line 2242, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment {
+  border-bottom: 1px solid #ecedee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 2246, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment ul.children li.comment {
+  border-bottom: 1px solid #ecedee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 2251, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment li.comment, .commentlist li.comment ul.children li.comment:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 2256, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body {
+  margin-bottom: 20px;
+}
+/* line 2258, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body p {
+  margin-bottom: 0;
+}
+/* line 2263, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist > li.comment:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 2267, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist > li.comment:last-child .comment-body {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 2273, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist ul.children {
+  padding-left: 100px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+/* line 2278, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body .avatar {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+/* line 2286, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist .comment-body .avatar img {
+  width: 100%;
+}
+/* line 2289, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body .comment-text {
+  overflow: hidden;
+  height: 100%;
+}
+/* line 2292, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body .comment-text .author {
+  margin-bottom: 10px;
+}
+/* line 2294, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body .comment-text .author span {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 2300, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.commentlist li.comment .comment-body .comment-text .author div.date {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* line 2308, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-meta {
+  float: left;
+}
+
+/* line 2312, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-edit-link, .comment-reply-link {
+  float: right;
+  font-size: 12px;
+  padding: 7px;
+  margin-left: 10px;
+  line-height: normal;
+  height: auto;
+  display: block;
+  background-color: #da1711;
+  color: #fff;
+  border-radius: 100px;
+}
+
+/* line 2325, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-reply.button {
+  float: right;
+  font-size: 12px;
+  padding: 7px;
+  margin-left: 10px;
+  line-height: normal;
+  height: auto;
+  display: block;
+  background-color: #da1711;
+  color: #fff;
+  border-radius: 100px;
+}
+/* line 2336, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-reply.button:hover {
+  background-color: #343334;
+}
+
+/* line 2341, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cancel-comment-reply a {
+  margin-bottom: 20px;
+}
+
+/* line 2345, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form .form-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 2348, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form .form-input i {
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  font-size: 15px;
+  z-index: 1;
+  color: #7b7b7b;
+}
+/* line 2356, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form .form-input input {
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  border-radius: 100px;
+  padding: 3px 0 3px 30px;
+}
+/* line 2361, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form .form-input input:focus {
+  border: 1px solid #da1711;
+}
+
+/* line 2367, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title, .contact-form {
+  border-top: 1px solid #eff0f3;
+}
+
+/* line 2371, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form {
+  margin: 0 30px;
+}
+/* line 2372, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.comment-form .form-input textarea {
+  padding-left: 30px;
+  padding-top: 5px;
+  height: 160px;
+  width: 100%;
+  line-height: 22px;
+  border-radius: 20px;
+}
+
+/* line 2384, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond h4.respond_post_title {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+  background-color: #da1711;
+  padding: 0 40px;
+  border-radius: 100px;
+  color: #fff;
+  line-height: 30px;
+}
+/* line 2394, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .reply-title {
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: -17px;
+}
+/* line 2398, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .reply-title h4 {
+  margin: 0;
+}
+/* line 2402, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .form-actions {
+  margin: 15px 0;
+}
+/* line 2405, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .form-item {
+  margin: 15px 0;
+}
+/* line 2407, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .form-item textarea {
+  width: 100%;
+  height: 120px;
+}
+/* line 2411, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .form-item input {
+  width: 100%;
+}
+/* line 2415, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .form-actions .awe-btn {
+  width: 100%;
+}
+
+/* line 2420, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.img_item_list_post, .meta_item_list_post {
+  width: 50%;
+  float: left;
+}
+
+/* line 2425, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond {
+  display: block;
+  padding: 0 10px 30px 9px;
+}
+/* line 2426, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond form {
+  margin-bottom: 0;
+}
+/* line 2431, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .comment-form {
+  margin: 0;
+}
+/* line 2433, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .comment-form input.button {
+  margin: 0 20px;
+  border-radius: 100px;
+  padding: 5px 20px;
+  background-color: #da1711;
+  color: #fff;
+}
+/* line 2439, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+#respond .comment-form input.button:hover {
+  background-color: #343334;
+}
+
+/* line 2446, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+article.item_list_post {
+  display: block;
+  border-bottom: 1px solid #ecedee;
+  background-color: #fff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* line 2456, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.img_item_list_post {
+  position: relative;
+  max-height: 350px;
+  min-height: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+/* line 2465, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.col-md-12 .img_item_list_post {
+  width: 40%;
+}
+/* line 2468, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.col-md-12 .meta_item_list_post {
+  width: 60%;
+}
+
+/* line 2473, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.img_item_list_post img {
+  width: auto;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 2480, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_meta_item_list_post {
+  padding: 15px 20px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 2488, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_list_post, .contant_item_list_post {
+  margin-bottom: 15px;
+}
+
+/* line 2492, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.title_item_list_post {
+  margin-bottom: 15px;
+}
+/* line 2494, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.title_item_list_post a {
+  text-transform: capitalize;
+  line-height: 1.4;
+  color: #343334;
+}
+/* line 2498, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.title_item_list_post a:hover {
+  color: #da1711;
+}
+
+/* line 2504, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_list_post span a {
+  margin-right: 5px;
+  color: #da1711;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 2509, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.cat_item_list_post span a:hover {
+  color: #343334;
+}
+
+/* line 2514, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.posts_icon i {
+  color: #343334;
+}
+
+/* line 2518, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.item_list_post .auth_meta {
+  margin-bottom: -10px;
+}
+
+/* line 2522, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.posts_icon {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 0 10px 10px;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  -ms-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+/* line 2537, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_grid .all_content_blog_post, .layout_grid .media_blog_post {
+  margin-bottom: 0;
+}
+
+/* line 2542, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.posts_icon i {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  line-height: 33px;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 2552, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content, .page_content.col-md-10 {
+  position: relative;
+  background-color: #fff;
+}
+
+/* line 2557, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_grid .blog_post_title h2, .layout_index_2 .blog_post_title h2, .layout_news .blog_post_title h2 {
+  font-size: 20px;
+  letter-spacing: .8px;
+  line-height: 26px;
+}
+
+/* line 2564, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_grid .col-md-12 .blog_post {
+  float: left;
+  width: 32%;
+}
+/* line 2568, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_grid .col-md-8 .blog_post {
+  float: left;
+  width: 48.5%;
+}
+/* line 2572, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_grid .pagination_post ul.pager {
+  margin: 0 0 50px;
+}
+
+/* line 2577, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_classic .posts_area {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 2582, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_index_2 .all_content_blog_post {
+  margin-bottom: 0;
+}
+
+/* line 2587, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_news .all_content_blog_post {
+  margin-bottom: 0;
+}
+/* line 2590, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_news .col-md-8 .related_grid .post_related_grid {
+  float: left;
+  width: 48.5%;
+}
+/* line 2594, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_news .col-md-12 .related_grid .post_related_grid {
+  float: left;
+  width: 32%;
+}
+
+/* line 2601, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_index_2 .col-md-8 .related_grid .post_related_grid {
+  float: left;
+  width: 48.5%;
+}
+/* line 2605, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.layout_index_2 .col-md-12 .related_grid .post_related_grid {
+  float: left;
+  width: 32%;
+}
+
+/* line 2611, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.posts_area.col-md-10 {
+  margin: 0 100px auto;
+}
+
+/* line 2615, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.page_content {
+  margin-bottom: 50px;
+}
+/* line 2616, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.page_content.col-md-10 {
+  margin: 0 100px 50px auto;
+  float: none;
+}
+
+/* line 2623, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.page_wrapper .author_title h3 {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+}
+
+/* line 2630, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content {
+  padding: 20px;
+}
+/* line 2631, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ul {
+  margin-left: 45px;
+  margin-bottom: 10px;
+}
+/* line 2634, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ul li:before {
+  content: "";
+  display: block;
+  float: left;
+  margin-top: .75em;
+  margin-left: -20px;
+  width: 5px;
+  height: 5px;
+  vertical-align: middle;
+  background-color: #da1711;
+}
+/* line 2647, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content a {
+  text-decoration: underline;
+  color: #da1711;
+}
+/* line 2651, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content cite {
+  font-weight: 700;
+}
+/* line 2654, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ul {
+  list-style: circle inside;
+}
+/* line 2657, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ol {
+  margin-bottom: 5px;
+  list-style: decimal inside;
+  padding-left: 0;
+  margin-top: 0;
+}
+/* line 2663, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+/* line 2668, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ol ol, .inner_page_content ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+/* line 2674, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content ul ol, .inner_page_content ul ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+/* line 2679, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_page_content li {
+  margin-bottom: 1rem;
+}
+
+/* line 2684, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.about_me_content, .archives_content, .authors_content, .contact_me_content {
+  margin: 100px auto;
+  background-color: #fff;
+  position: relative;
+  float: none;
+}
+
+/* line 2691, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.authors_content .author_info {
+  border-bottom: 1px solid #E6E6E6;
+}
+/* line 2693, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.authors_content .author_info:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 2698, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title, .contact-form, strong.about_me_jop {
+  border-bottom: 1px solid #eff0f3;
+}
+
+/* line 2702, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title {
+  background-color: #f8f9fc;
+  padding: 20px;
+}
+/* line 2705, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title h3 {
+  margin: 0;
+  text-transform: capitalize;
+}
+/* line 2708, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title h3:after {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background-color: #da1711;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 2719, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_about_me_content {
+  padding: 30px;
+}
+/* line 2721, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_about_me_content .about_me_pic img {
+  width: 100%;
+}
+
+/* line 2726, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.about_me_img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 2731, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+h3.about_me_title {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* line 2736, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+strong.about_me_jop {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* line 2742, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_contact_me_content {
+  padding: 20px;
+}
+
+/* line 2746, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form {
+  background-color: #f8f9fc;
+  padding: 20px 0;
+}
+/* line 2749, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form .form-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 2752, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form .form-input i {
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  font-size: 15px;
+  z-index: 1;
+  color: #7b7b7b;
+}
+/* line 2760, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form .form-input input {
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  border-radius: 100px;
+  padding: 3px 0 3px 30px;
+}
+/* line 2765, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form .form-input input:focus {
+  border: 1px solid #da1711;
+}
+/* line 2769, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form .form-input textarea {
+  padding-left: 30px;
+  padding-top: 5px;
+  height: 160px;
+  width: 100%;
+  line-height: 22px;
+  border-radius: 20px;
+}
+/* line 2778, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form input.button {
+  margin: 0 20px;
+  border-radius: 100px;
+  padding: 5px 20px;
+  background-color: #da1711;
+  color: #fff;
+}
+/* line 2784, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.contact-form input.button:hover {
+  background-color: #343334;
+}
+
+/* line 2790, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.archive_content {
+  margin: 100px auto;
+  float: none;
+  position: relative;
+}
+
+/* line 2796, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.archive_wrapper .author_title h3 {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+}
+
+/* line 2803, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.author_title strong {
+  line-height: 37px;
+  text-transform: capitalize;
+  letter-spacing: .2px;
+}
+
+/* line 2809, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.archive_content .pagination_post ul.pager {
+  margin: 20px 0 0;
+}
+
+/* line 2813, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content {
+  padding: 20px;
+}
+/* line 2815, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .text-block {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin: 30px 0;
+}
+/* line 2820, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .text-block p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 2826, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+/* line 2830, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group:last-child {
+  margin-bottom: 0;
+}
+/* line 2834, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel + .panel {
+  margin-top: 10px;
+}
+/* line 2837, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel.panel-default {
+  border-color: #eff0f3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 2845, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-heading {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background-color: #f8f9fc;
+  background-image: inherit;
+}
+/* line 2853, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-heading h4 {
+  margin: 0;
+}
+/* line 2855, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-heading h4 a {
+  position: relative;
+  display: block;
+  font-family: Ubuntu, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #aeaeae;
+  padding: 18px 25px;
+}
+/* line 2865, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-heading h4 a:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f068";
+  right: 20px;
+  top: 20px;
+}
+/* line 2872, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-heading h4 a.collapsed:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f067";
+  right: 20px;
+  top: 20px;
+}
+/* line 2882, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+/* line 2887, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+/* line 2891, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body ul li {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 30px;
+}
+/* line 2895, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body ul li ~ li {
+  border-top: 1px solid #eff0f3;
+}
+/* line 2898, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body ul li a {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  padding: 0 0 0 25px;
+  text-decoration: none;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+/* line 2917, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher, .switcherContent ul li {
+  -moz-transition: all .2s ease-in;
+  -khtml-transition: all .2s ease-in;
+}
+
+/* line 2922, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.inner_archives_content .panel-group .panel .panel-body ul li a:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f0f6";
+  left: 0;
+}
+
+/* line 2929, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.ads_block {
+  display: none;
+}
+
+/* line 2933, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.not_found_content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* line 2936, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.not_found_content h1 {
+  font-size: 170px;
+  line-height: initial;
+  margin: 0;
+  font-weight: lighter;
+}
+/* line 2942, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.not_found_content p {
+  margin-top: 10px;
+}
+/* line 2945, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.not_found_content .ads_block {
+  margin-top: 30px;
+}
+
+/* line 2950, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.back_to_home a {
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  color: #343334;
+  padding: 7px 20px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 100px;
+}
+/* line 2962, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.back_to_home a:hover {
+  background-color: #da1711;
+  color: #fff;
+}
+
+/* line 2968, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher {
+  display: none;
+  position: fixed;
+  top: 61px;
+  z-index: 1000000000;
+  transition: all .2s ease-in;
+}
+/* line 2974, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcherWrappper {
+  position: relative;
+}
+/* line 2977, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcher-show-hide {
+  background-color: #c0392b;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 21px;
+  overflow: hidden;
+  position: absolute;
+  right: 100%;
+  top: 30px;
+  padding: 0 !important;
+}
+/* line 2989, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcher-show-hide i {
+  font-size: 24px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* line 3009, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcherContents {
+  background-color: #fff;
+  padding: 20px;
+  width: 231px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -o-border-radius: 0 2px 2px 0;
+  -ms-border-radius: 0 2px 2px 0;
+  -khtml-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+}
+/* line 3025, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcherContents header {
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #7db701;
+  text-align: center;
+}
+/* line 3031, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher .switcherContents header h5 {
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: 'Open Sans', Helvetica, Tahoma, Arial, sans-serif;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* line 3085, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent {
+  padding: 20px 0;
+  border-bottom: 1px solid #d1d1d3;
+}
+/* line 3088, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent .title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+/* line 3093, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* line 3099, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcher.opened {
+  right: 0 !important;
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 0 5px 1px #f3f3f3;
+}
+
+/* line 3105, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent ul {
+  text-align: center;
+  margin: 0;
+}
+/* line 3108, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all .2s ease-in;
+}
+/* line 3113, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.switcherContent ul li:last-child {
+  margin-right: 0;
+}
+
+/* line 3119, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.skinsColor {
+  font-size: 0;
+  display: none;
+}
+/* line 3122, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.skinsColor ul li {
+  width: 50px;
+  height: 30px;
+  margin: 3px;
+}
+
+/* line 3129, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.images-bg ul li:nth-child(8n+8), .patterens ul li:nth-child(7n+7) {
+  margin-right: 0;
+}
+
+/* line 3133, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.skinsColor ul li:hover {
+  border: 1px solid #eee;
+}
+
+/* line 3137, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.tempLayout ul li, .theme ul li {
+  border: 1px solid #4a454b;
+  width: 31%;
+  font-size: 12px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #4a454b;
+}
+
+/* line 3148, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.tempLayout ul .active-layout, .tempLayout ul li:hover {
+  background-color: #4a454b;
+  color: #fff;
+}
+
+/* line 3155, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.theme ul .active-layout {
+  background-color: #4a454b;
+  color: #fff;
+}
+/* line 3159, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.theme ul li {
+  width: 48%;
+  color: #4a454b;
+}
+/* line 3160, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.theme ul li:hover {
+  background-color: #4a454b;
+  color: #fff;
+}
+/* line 3166, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.theme ul li.theme-dark {
+  color: #fff;
+}
+/* line 3169, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.theme ul li.theme-light {
+  color: #4a454b !important;
+}
+
+/* line 3175, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.patterens ul li, .images-bg ul li {
+  width: 22px;
+  height: 20px;
+  border: 1px solid #d1d1d3;
+}
+/* line 3179, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.patterens ul li img, .images-bg ul li img {
+  width: 100%;
+  height: 100%;
+  margin-top: -7px;
+}
+
+/* line 3186, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed, .body-boxed-2 {
+  background: #fff;
+}
+
+/* line 3190, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed .all-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+/* line 3196, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed-2 .all-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+/* line 3200, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed-2.fixed-header .header {
+  width: 1200px;
+}
+
+/* line 3205, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed.fixed-header .header {
+  width: 1200px;
+}
+
+/* line 3209, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.body-boxed-2 .all-wrapper {
+  margin: 40px auto;
+}
+
+/* line 3213, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+i:hover {
+  color: #da1711;
+}
+
+/* line 3215, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/templates/style.scss */
+.dk-header-off {
+  font-size: 100% !important;
+}

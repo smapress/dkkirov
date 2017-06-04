@@ -1,0 +1,19 @@
+/* line 1, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/img.scss */
+.dk-img {
+  width: 100%;
+  display: table;
+  overflow: hidden;
+}
+/* line 3, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/img.scss */
+.dk-img .dk-img-wrapper {
+  width: 100%;
+  table-layout: fixed;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 4, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/blocks/img.scss */
+.dk-img .dk-img-item {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

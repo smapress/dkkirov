@@ -1,0 +1,12 @@
+/* line 1, D:/Frontend/dkkirov/app/apps/themes/camaleon_first/assets/stylesheets/action/action.scss */
+.dk-light-overlay:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
