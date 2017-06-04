@@ -1,0 +1,5 @@
+.dk-img-item {
+  width: 100%; display: table; overflow: hidden;
+  .dk-img-wrapper { width: 100%; table-layout: fixed; display: table-cell; vertical-align: middle; }
+  .dk-img { max-width: 100%; display: block; margin: 0 auto; }
+}

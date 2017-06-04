@@ -1,0 +1,8 @@
+.dk-comments
+  - if post.the_comments.count > 0
+    .dk-comments-title Коментарии
+    .dk-comments-action.js-more-content{data: {height: 450}}
+      = render "comments/#{defined?(style2) ? 'comments_list2' : 'comments_list'}",
+               comments: post.the_comments,
+               children: ''
+  = render 'comments/comments_form', post: post

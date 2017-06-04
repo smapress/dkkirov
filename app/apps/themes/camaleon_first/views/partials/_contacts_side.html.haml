@@ -1,0 +1,14 @@
+:ruby
+  field = current_theme.get_fields_object[slug]
+
+- if field.present?
+  .dk-indent{class: local_assigns.fetch(:wrap, 'col-md-12')}
+    .dk-main-info.dk-block
+      - if local_assigns[:icon]
+        %i.dkmi-icon.fa{class: local_assigns[:icon]}
+      .dkmi-content
+        .dkmi-header
+          = field[:name]
+        .dkmi-item
+          %a{href: field[:values][0], target: 'blank'}
+            = field[:values][1]

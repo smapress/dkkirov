@@ -1,0 +1,16 @@
+#carousel_categories.carousel.slide.categories-carousel
+  / Carousel items
+  .carousel-inner
+    - categories.each_slice(6).each_with_index do |_cats, index|
+      %div{:class => "item #{"active" if index == 0}"}
+        .row
+          - _cats.each do |cat|
+            .col-md-2
+              %a.thumbnail.text-center{:href => "#{cat.the_url}"}
+                %img{:alt => "Image", :src => "#{cat.the_thumb_url}", :style => "max-width:100%;"}/
+                %span.category-title= cat.the_title
+  / .carousel-inner
+  - if categories.size > 6
+    %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel_categories"} ‹
+    %a.right.carousel-control{"data-slide" => "next", :href => "#carousel_categories"} ›
+/ .Carousel

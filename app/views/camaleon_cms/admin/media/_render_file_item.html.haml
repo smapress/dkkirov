@@ -1,0 +1,31 @@
+- files.each do |file| next if @media_formats.present? && !@media_formats.include?(file["format"]) && !@media_formats.include?(file["url"].split('.').last)
+  - file['url'] = download_private_file_cama_admin_media_url(file: file[:url]) if params[:private].present?
+  %div{:class => "media_item file_item #{file["format"]}_format", "data-key" => "#{file["name"]}"}
+    .thumb
+      - case file["format"]
+      - when "image"
+        %img{alt: '', src: file['url']}
+      - when "audio" && can?(:manage, :users)
+        %i.fa.fa-file-audio-o
+      - when "video" && can?(:manage, :users)
+        %i.fa.fa-film
+      - when "compress" && can?(:manage, :users)
+        %i.fa.fa-file-archive-o
+      - when "doc" && can?(:manage, :users)
+      - when "document" && can?(:manage, :users)
+        %i.fa.fa-file-text-o
+      - else
+        %i.fa.fa-file-o
+    .label_thumb
+      = file["name"]
+    %textarea.hidden.data_value= raw file.to_json
+    - if can? :manage, :users
+      .actions
+        - if file['format'] == 'image' && File.extname(file['name']).downcase != '.gif'
+          %a.edit_item.btn.btn-primary.btn-xs{:href => "#", data: {'data-permit-overwrite' => 'true' }}
+            %i.fa.fa-pencil
+          %a.del_item.btn.btn-danger.btn-xs{:href => "#"}
+            %i.fa.fa-trash
+    - else
+      %a.del_item.btn.btn-danger.btn-xs{:href => "#"}
+        %i.fa.fa-trash

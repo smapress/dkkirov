@@ -1,0 +1,25 @@
+.dk-type-list {
+  .dk-type-list-item {
+    width: 100%;
+    .dktl-item-content { max-height: 140px; overflow: hidden; }
+    .dktl-item-more { top: -25px; padding: 10px 0 0 10px; }
+  }
+  .dk-events-list-item {
+    .dktl-item-title { font-size: 115%; margin-bottom: 10px; height: 52px; }
+    .dk-img-wrapper { height: 325px; }
+    .dktl-img { max-height: 325px; }
+    .dktl-item-content { height: 64px; margin-bottom: 10px; overflow: hidden; padding: 5px 0; }
+    .dktl-item-info-price { color: #da1711; }
+    .dktl-item-thumb { padding: 0; }
+    .dktl-item-more { bottom: 0; padding: 0 0 0 5px; }
+    .dktl-item-more {
+      color: #444;
+      &:hover { color: #da1711; }
+    }
+  }
+  .dktl-item-info { position: relative; min-height: 5px; }
+  .dktl-item-more { position: absolute; right: 0; background: #fff; box-shadow: -10px -10px 10px 0 #fff; }
+  .dktl-item-content { padding: 5px 0; }
+  .dktl-item-thumb { padding: 15px 0; }
+  .dktl-item-title { font-size: 125%; display: block; overflow: hidden; margin-top: 14px; }
+}

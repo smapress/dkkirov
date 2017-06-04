@@ -1,0 +1,6 @@
+- fields.each do |field|
+  .dk-custom-fields.dk-custom-fields-info
+    %strong.dk-field-name= cama_print_i18n_value(field[:name])
+    .dk-field-box{class: "dk-field-#{field[:options][:field_key]}"}
+      .dkfb-item{class: "dkfb-#{field[:options][:field_key]}-item js-dkfb-#{field[:options][:field_key]}-item"}
+        = field[:values]

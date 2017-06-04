@@ -1,0 +1,15 @@
+- comments.each do |comment| user = comment.comment_user.decorate
+  %div{:class => "row #{"answer" if children.present?}"}
+    .col-md-2.col-sm-2.col-xs-4
+      .thumbnail
+        = link_to(image_tag(user.the_avatar, class: "img-responsive"), user.the_url)
+    .col-md-10.col-sm-10.col-xs-8
+      .panel.panel-default
+        .panel-heading
+          %strong= link_to(user.the_name, user.the_url)
+          %small.text-muted.pull-right= comment.decorate.the_created_at
+        .panel-body
+          = raw comment.content
+
+  - if comment.children.present?
+    = render 'partials/comments_list', comments: comment.children.approveds, children: 'present'

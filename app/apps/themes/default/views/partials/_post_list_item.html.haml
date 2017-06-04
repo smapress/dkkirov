@@ -1,0 +1,26 @@
+%body
+  %article
+    %header.entry-header
+      .entry-thumbnail
+        = raw post.the_link_thumb() if post.has_thumb?
+      %h1.entry-title
+        %a{:href => "#{post.the_url}", :rel => "bookmark"}= post.the_title
+      .entry-meta
+        %span.date
+          %a{:href => "#{post.the_url}", :rel => "bookmark", :title => "Enlace permanente a #{post.the_title}"}
+            %time.entry-date{:datetime => ""}= post.the_created_at
+        %span.categories-links
+          = raw get_taxonomy(post.the_categories.decorate, 'category tag')
+        %span.tags-links
+          = raw get_taxonomy(post.the_tags.decorate, 'tag')
+      / .entry-meta
+    / .entry-header
+    .entry-content
+      = raw post.the_content
+    / .entry-content
+    - if post.the_comments.count > 0
+      %footer.entry-meta
+        .comments-link
+          %a{:href => "#{post.the_url}"} Ver los comentarios
+        / .comments-link
+      / .entry-meta

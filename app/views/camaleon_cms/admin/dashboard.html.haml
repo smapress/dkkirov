@@ -1,0 +1,15 @@
+- if can? :manage, :users
+  .page-content-wrap
+    .row
+      .col-md-12
+        .panel.panel-default
+          .panel-heading
+            %h3.panel-title= t('camaleon_cms.admin.sidebar.dashboard')
+          .panel-body{:style => "min-height: 350px"}
+            %h3= current_theme.get_fields_object[:signature][:values]
+            - r = {content: ""}; hooks_run("on_notification", r);
+            #dashboard_notifications
+              = raw r[:content]
+            - r = {content: ""}; hooks_run("on_dashboard", r);
+            #dashboard_items
+              = raw r[:content]

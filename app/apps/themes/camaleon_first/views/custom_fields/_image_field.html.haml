@@ -1,0 +1,10 @@
+.dk-custom-fields{class: "dk-custom-field-#{field[:options][:field_key]}"}
+  %strong.dk-field-name= cama_print_i18n_value(field[:name])
+  .dk-field-box.dk-gallery.js-gallery{class: "dk-field-#{field[:options][:field_key]}"}
+    %ul.dkfb-items
+      - field[:values].each do |value|
+        %li.dkfb-img-wrapper.js-gallery-item{data: {'visible-small' => 3,
+                                                    'visible-large' => 4}}
+          .dkfb-img-item.js-dkfb-img-item{data: {link: value}}
+            %img.dkfb-img{src: value}
+    .dk-gallery-state-change.fa.fa-angle-down.js-gallery-state-change

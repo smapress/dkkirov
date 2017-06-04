@@ -1,0 +1,13 @@
+.container-fluid
+  = render partial: 'partials/breadcrumb', locals: {breadcrumb: @post.the_breadcrumb}
+  .row
+    .col-md-9.post-view
+      %article.post-content
+        %h1= @post.the_title
+        .author
+          %time{:datetime => ""}= @post.the_created_at
+        .item-content
+          = raw @post.the_content
+      = render partial: 'partials/comments', locals: {post: @post} if @post.can_commented?
+    .col-md-3
+      = render partial: 'partials/sidebar', locals: {post: @post}

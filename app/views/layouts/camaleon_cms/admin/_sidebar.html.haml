@@ -1,0 +1,14 @@
+%aside#sidebar-menu.main-sidebar
+  %section.sidebar
+
+    %form.sidebar-form.cama_ajax_request{:action => cama_admin_search_path, :method => "get"}
+      .input-group
+        %input.form-control{:name => "q", :placeholder => "#{t("camaleon_cms.admin.button.search")}...", :type => "text"}/
+        %span.input-group-btn
+          %button#search-btn.btn.btn-flat{:type => "submit"}
+            %i.fa.fa-search
+
+    %ul.sidebar-menu.cama_ajax_request
+      %li.header= t("camaleon_cms.admin.sidebar.main_navigation")
+      = raw _admin_menu_draw
+

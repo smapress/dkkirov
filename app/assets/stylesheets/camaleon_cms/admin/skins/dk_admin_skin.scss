@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #fff !important;
+  a { color: #da1711 !important; }
+}
+.dk-btn {
+  background: #f4f4f4 !important; color: #444 !important; border-radius: 0 !important;  margin: 4px 0;
+  &:hover { color: #da1711 !important; }
+}
+.dk-profile-form-field { margin-top: 15px; margin-bottom: 25px; }
+.content-wrapper { background: #f7f7f7 !important; }
+.panel { border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.panel-footer { background-color: #fff !important; }
+.panel-default > .panel-heading { background-color: #fff; border-color: #fff; }
+.main-sidebar { background-color: #fff !important; }
+a { color: #777 !important;
+  &:hover { color: #da1711 !important; background: #f7f7f7 !important; border-left-color: #da1711 !important; }
+}
+.logo { background-color: #fff !important; }
+.treeview-menu { background-color: #fff !important; }
+li.header { color: #da1711 !important; background: #fff !important; }
+li > a { background-color: #fff !important; }
+input[type="text"] { background-color: #fff !important; }
+.del_item,
+.edit_item { position: absolute; top: 0; color: #fff !important; }
+.del_item { right: 0; }
+.edit_item { left: 0; }
+.media_browser_list .file_item.image_format .thumb img { max-height: 157px; min-width: initial !important; }
+.cama_media_fileuploader .btn { position: absolute !important; width: 200px; bottom: -45px; right: 15px; }
+.media_browser_list { min-height: 248px !important; }
+@media (min-width: 1200px) {
+  .group-input-fields-content textarea { height: 155px; }
+}
+@media (max-width: 1200px) {
+  .group-input-fields-content textarea { height: 267px; }
+}

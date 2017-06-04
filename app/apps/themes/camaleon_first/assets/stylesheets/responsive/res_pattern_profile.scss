@@ -1,0 +1,11 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dk-template-profile {
+    .dk-field-advance { max-height: 331px !important; }
+  }
+}
+@media (min-width: 1199px){
+  .dk-template-profile {
+    .dk-custom-field-image .dkfb-img,
+    .dk-custom-field-video .dkfb-video-item iframe { max-height: 135px; }
+  }
+}

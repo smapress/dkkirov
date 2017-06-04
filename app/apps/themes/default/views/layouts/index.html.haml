@@ -1,0 +1,65 @@
+!!!
+%html{:lang => "en"}
+  %head
+    / META SECTION
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / END META SECTION
+    = stylesheet_link_tag theme_asset_path("css/main.css")
+    = stylesheet_link_tag theme_asset_path("genericons/genericons.css")
+    = javascript_include_tag theme_asset_path("js/main.js")
+    = raw the_head
+  %body
+    #page.hfeed.site
+      / header
+      %header#masthead.site-header{:role => "banner"}
+        %a.home-link{:href => "#{current_site.the_url}", :rel => "home", :title => "#{current_site.the_title}"}
+          %h1.site-title= current_site.the_title
+          %h2.site-description= current_site.the_content
+        #navbar.navbar
+          %nav#site-navigation.navigation.main-navigation{:role => "navigation"}
+            .menu-menu-1-container{:style => "float: left;"}
+              = raw get_nav_menu('main_menu', 'nav navbar-nav nav-menu')
+            %div{:style => ""}
+              = render partial: 'partials/search_form'
+              %ul.nav.navbar-nav.nav-menu{:style => "float: right;"}
+                - if signin?
+                  %li.dropdown
+                    %a.dropdown-toggle{:href => "#"}
+                      %img{:alt => "", :src => "#{cama_current_user.decorate.the_avatar}", :style => "max-width: 24px; border-radius: 50%"}/
+                      = cama_current_user.username
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => cama_admin_dashboard_path}= I18n.t('camaleon_cms.common.dashboard')
+                      %li
+                        %a{:href => cama_admin_profile_path}= I18n.t('camaleon_cms.common.profile')
+                      %li
+                        %a{:href => cama_admin_logout_path}= I18n.t('camaleon_cms.common.logout')
+                - else
+                  %li.dropdown
+                    %a#login-user.dropdown-toggle{:href => "#"} Login / Register
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => cama_admin_login_path}= I18n.t('camaleon_cms.common.login')
+                      %li
+                        %a{:href => cama_admin_register_path}= I18n.t('camaleon_cms.common.register')
+              = raw current_site.draw_languages("language list-inline pull-right", true)
+          / #site-navigation
+        / #navbar
+      / #masthead
+      / ./header
+      #main.site-main
+        #primary.content-area
+          #content.site-content{:role => "main"}
+            = yield
+          / #content
+        / #primary
+      / footer
+      %footer#colophon.site-footer{:role => "contentinfo"}
+        #secondary.sidebar-container{:role => "complementary"}
+        .site-info
+          = raw current_theme.the_field("footer")
+        / .site-info
+      / #colophon
+      / ./footer

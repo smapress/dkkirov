@@ -1,0 +1,15 @@
+/*
+*= require camaleon_cms/bootstrap.min.css
+*= require font-awesome
+
+*= require ../shared/fonts
+
+*= require ../sections/main_header
+*= require ../sections/main_body
+*= require ../sections/main_footer
+
+*= require ../blocks/img
+*= require ../blocks/navigation
+*= require ../blocks/search
+*= require ../blocks/visual_impaired
+*/

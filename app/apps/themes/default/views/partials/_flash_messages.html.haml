@@ -1,0 +1,18 @@
+- if flash[:notice]
+  .flash_messages
+    .alert.alert-success
+      %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+      = raw(flash[:notice])
+- if flash[:error]
+  .flash_messages
+    .alert.alert-danger
+      %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+      = raw(flash[:error])
+- if flash[:alert]
+  .flash_messages
+    .alert.alert-warning
+      %button.close{"aria-label" => "Close", "data-dismiss" => "alert", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+      = raw(flash[:alert])

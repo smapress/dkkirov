@@ -1,0 +1,36 @@
+.dk-body {
+  font: 500 22px/26px 'ekibastuz', sans-serif;
+  background: #f7f7f7; font-size: 14px;
+  .dk-content { margin: 25px 0; }
+  .dk-section { position: relative; }
+  .dk-title { font-size: 22px; margin-top: 0; }
+  .dk-cont-title { font-size: 21px; margin-top: 0; }
+  .dk-block,
+  .dk-present-section { background: #fff; }
+  .dk-block { padding: 15px; }
+  .dk-indent { margin-top: 15px; margin-bottom: 15px; }
+  .dk-breadcrumb {
+    line-height: normal;
+    .breadcrumb {
+      padding: 2px 0 8px; margin: 0; background: transparent;
+      li { display: inline-block; font-size: 14px; }
+    }
+  }
+  .dk-head-link {
+    font-size: 100%; color: #444; text-decoration: none; transition: .1s;
+    &:hover { color: #da1711; }
+  }
+  .dk-signature { position: absolute; bottom: 15px; padding-top: 5px; border-top: 1px solid #f6f6f6; }
+  a { color: #da1711; font-size: 110%; }
+  h1,
+  h2,
+  h3 { margin-top: 0; }
+  .pagination a,
+  .pagination span {
+    border-radius: 0 !important; color: #da1711; border: 0; margin-right: 5px;
+    &:hover,
+    &:focus { color: #da1711; }
+  }
+  .alert-warning { color: #acacac; background-color: #fff; border-color: transparent; border-radius: 0; margin-top: -10px; }
+  .pagination .active span { background-color: #da1711; color: #fff; }
+}

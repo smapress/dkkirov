@@ -1,0 +1,16 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title
+  %body
+    %table{:style => "width: 100%"}
+      %tr
+        %td{:style => "text-align: center; background-color: #1ABC9C; padding: 10px;"}= image_tag @current_site.the_logo
+      %tr
+        %td
+          = yield
+      %tr
+        %td{:style => "text-align: center;"}
+          %a{:href => "#{@url_base}", :style => "color: #ffffff;"} Visit Site

@@ -1,0 +1,34 @@
+:ruby
+  event = (@post_type.slug == 'commerce')
+  news = (@post_type.slug == 'news')
+  docs = (@post_type.slug == 'documents')
+  about = (@post_type.slug == 'about')
+  price = post.try(:the_price)
+
+.dk-indent{class: event ? 'col-md-4 dk-events-list-item' : 'col-md-12 dk-type-list-item'}
+  .dk-inner-wrap.dk-block
+    .row
+      - if !news && !docs && !about
+        %div{class: event ? 'col-md-12' : 'col-md-4'}
+          .dktl-item-thumb.dk-img-item.dktl-img-item
+            %a.dk-img-wrapper{href: post.the_url}
+              = post.the_thumb(class: 'dk-img img-responsive dktl-img')
+      %div{class: event || news || docs || about ? 'col-md-12' : 'col-md-8'}
+        %a.dktl-item-title{href: post.the_url}
+          = truncate post.the_title, length: 45, escape: false
+        .dktl-item-content
+          = post.the_content.html_safe
+      .col-md-12
+        .dktl-item-info
+          - if post.get_fields_object[:datatime_event].present?
+            .dktl-item-info-date
+              = post.get_fields_object[:datatime_event][:values].gsub(' ', '/')
+          - if price.present?
+            .dktl-item-info-price
+              - if price.gsub(/\D/, '').to_i == 0
+                Бесплатно
+              - else
+                Цена:
+                = price.gsub(/[^0-9,.]/, '').to_i
+                руб.
+          %a.dktl-item-more{href: post.the_url} Подробнее

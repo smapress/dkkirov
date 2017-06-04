@@ -1,0 +1,57 @@
+- post.get_fields_object.each do |slug, field|
+  - field_key = field[:options][:field_key]
+  - values = field[:values].is_a?(Array) ? field[:values] : [field[:values]]
+  - if key.include? field_key
+    .dk-custom-fields{class: "dk-custom-field-#{field_key}"}
+      %strong.dk-field-name= cama_print_i18n_value(field[:name]) + ':'
+      .dk-field-box.dk-gallery.js-gallery{class: "dk-field-#{field_key}", data: {slug: slug}}
+        %ul.dkfb-items
+          - values.each do |value|
+            - case field[:options][:field_key]
+              - when 'text_box','text_area', 'select','radio','checkbox','colorpicker','date','email','numeric', 'phone'
+                %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}= value
+              - when 'editor'
+                %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}= raw value
+              - when 'image'
+                %li.dkfb-img-wrapper.js-gallery-item{data: {slug: slug,
+                                                            'visible-small' => 3,
+                                                            'visible-large' => 4}}
+                  .dkfb-img-item.js-dkfb-img-item{data: {link: value}}
+                    %img.dkfb-img{src: value}
+              - when 'audio'
+                %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                  %audio{controls: '', src: value}
+              - when 'video'
+                %li.dkfb-item.js-gallery-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item",
+                                              data: {slug: slug,
+                                                     evennum: 'true',
+                                                     'visible-small' => 2,
+                                                     'visible-large' => 4}}
+                  %iframe{src: value, allowfullscreen: true}
+              - when 'file'
+                %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                  %a{href: value, target: '_blank'}= value.split('/').last
+              - when 'url'
+                %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                  %a{href: value, target: '_blank'}= value
+              - when 'users'
+                - user = current_site.users.find(value).decorate
+                - if user.present?
+                  %li.dkfb-img-wrapper{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                    = link_to(image_tag(user.the_avatar, class: 'dkfb-img'), user.the_url, class: 'dkfb-img-item dkfb-user-item')
+                    %a.dkfb-user-title-item{href: user.the_url}= user.fullname
+              - when 'advance'
+                .dkfb-item.dkfb-advance-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                  %span= value
+              - when 'posts'
+                - post = current_site.posts.find(value) rescue {}
+                - if post.present?
+                  %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                    = post.decorate.the_title
+              - when 'field_attrs'
+                - post_attr = JSON.parse(value) rescue {}
+                - if post_attr.present?
+                  %li.dkfb-item{class: "dkfb-#{field_key}-item js-dkfb-#{field_key}-item"}
+                    = raw("<strong>#{post_attr['attr']}: </strong>#{post_attr['attr']}")
+              - else
+                .dkfb-extra-item= value

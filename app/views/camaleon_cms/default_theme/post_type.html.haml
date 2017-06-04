@@ -1,0 +1,46 @@
+:ruby
+  posts_events = @post_type.the_posts.paginate(page: params[:page], per_page: 6).eager_load(:metas)
+  posts = (@post_type.slug == 'commerce') ? posts_events : @posts
+
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/type_list')
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/type_list')
+
+.col-md-12.dk-indent.dk-type-list{class: "dk-type-list-#{@post_type.slug}"}
+  .dk-section.dk-pattern
+    %h1.dk-title-type-list.dk-title.dk-block
+      = @post_type.the_title
+      = @post_type.the_edit_link
+
+    - if @post_type.the_content.present?
+      .content
+        = raw @post_type.the_content
+
+    .row
+      - posts.each_with_index do |post, index|
+        = render 'partials/post_list_item', post: post.decorate, index: index
+
+    - if @posts.empty?
+      .alert.alert-warning Информация на странице отсутсвует
+
+  - if @categories.present?
+    .col-md-4
+      .categories_list
+        = render 'partials/categories_list', categories: @categories
+
+  = will_paginate posts,
+                  previous_label: '<i class="fa fa-angle-left"></i>',
+                  next_label: '<i class="fa fa-angle-right"></i>',
+                  renderer: BootstrapPagination::Rails if posts.present?
+
+- content_for :breadcrumb do
+  = render 'partials/breadcrumb', breadcrumb: @post_type.the_breadcrumb
+
+- content_for :dk_sidebar do
+  = render 'partials/contacts_side', slug: :info_rating, icon: 'fa-check'
+  = render 'partials/contacts_side', slug: :info_tel, icon: 'fa-phone'
+  = render 'partials/contacts_side', slug: :info_email, icon: 'fa-envelope-o'
+  = render 'partials/contacts_side', slug: :info_vk, icon: 'fa-vk'
+  = render 'partials/contacts_side', slug: :info_youtube, icon: 'fa-youtube'
+  = render 'partials/contacts_side', slug: :info_inst, icon: 'fa-instagram'

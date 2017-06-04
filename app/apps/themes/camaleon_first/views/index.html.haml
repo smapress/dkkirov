@@ -1,0 +1,67 @@
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/index'), defer: true
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset 'stylesheets/package/index'
+
+.col-md-12.dk-indent
+  .dk-services-line.dk-block
+    %h3.dk-title
+      %a.dk-head-link{href: current_site.the_post_type('services').the_url}
+        = current_site.the_post_type('services').the_title
+    .dk-gallery.js-gallery
+      %ul.dk-gallery-items.dk-events
+        - current_site.the_posts('services').decorate.each do |post|
+          %li.dk-gallery-img-wrap.js-gallery-item{data: {'visible-small' => 3, 'visible-large' => 4}}
+            %a.dk-col-line-link{href: post.the_url, title: post.the_title}= post.the_title
+.col-md-6.dk-indent
+  .dk-events-line.dk-block.js-dk-events-line
+    %h3.dk-title
+      %a.dk-head-link{href: current_site.the_post_type('commerce').the_url}
+        = current_site.the_post_type('commerce').the_title
+    .dk-gallery.js-gallery
+      %ul.dk-gallery-items.dk-events
+        - current_site.the_posts('commerce').decorate.each do |post|
+          %li.dk-gallery-img-wrap.js-gallery-item{data: {'visible-small' => 1, 'visible-large' => 1, autoscroll: 'true'}}
+            %a.dk-event-title{href: post.the_url}
+              = truncate post.the_title, length: 40, escape: false
+            %a.dk-gallery-img-item{href: post.the_url, title: post.the_title}
+              %img.dk-gallery-img{alt: post.the_title, src: post.the_thumb_url('')}
+.col-md-6.dk-indent
+  .dk-news-line.dk-block.js-dk-news-line
+    .dk-news-line-header
+      %h3.dk-title
+        %a.dk-head-link{href: current_site.the_post_type('news').the_url}
+          = current_site.the_post_type('news').the_title
+    - current_site.the_posts('news').latest.limit(3).decorate.each_with_index do |post, index|
+      .dk-news-line-item.js-dk-news-line-item{data: {num: index}}
+        .dknl-title
+          %a.dknl-title-link{href: post.the_url, title: post.the_title}
+            = truncate post.the_title, length: 38, escape: false
+        .dknl-content= truncate post.the_content, length: 170, escape: false
+        .dknl-more
+          %a.dknl-more-link{href: post.the_url, title: post.the_title} Подробнее
+    %a.dknl-title-link.dknl-title-link-all{href: current_site.the_post_type('news').the_url} Смотреть все новости
+.col-md-12.dk-indent
+  .dk-col-line.dk-block
+    %h3.dk-title
+      %a.dk-head-link{href: current_site.the_post_type('post').the_url}
+        = current_site.the_post_type('post').the_title
+    .dk-gallery.js-gallery
+      %ul.dk-gallery-items.dk-events
+        - current_site.the_posts('post').decorate.each do |post|
+          %li.dk-gallery-img-wrap.js-gallery-item{data: {'visible-small' => 2, 'visible-large' => 4}}
+            %a.dk-gallery-img-item{href: post.the_url, title: post.the_title}
+              %img.dk-gallery-img{alt: post.the_title, src: post.the_thumb_url('')}
+            .dkcl-body
+              %a.dk-col-line-link{href: post.the_url, title: post.the_title}= post.the_title
+              .dkcl-content
+                = truncate post.the_content, length: 95, escape: false
+              %a.dk-col-line-link{href: post.the_url, title: post.the_title} Подробнее
+
+- content_for :dk_sidebar do
+  = render 'partials/contacts_side', slug: :info_rating, icon: 'fa-check'
+  = render 'partials/contacts_side', slug: :info_tel, icon: 'fa-phone'
+  = render 'partials/contacts_side', slug: :info_email, icon: 'fa-envelope-o'
+  = render 'partials/contacts_side', slug: :info_vk, icon: 'fa-vk'
+  = render 'partials/contacts_side', slug: :info_youtube, icon: 'fa-youtube'
+  = render 'partials/contacts_side', slug: :info_inst, icon: 'fa-instagram'

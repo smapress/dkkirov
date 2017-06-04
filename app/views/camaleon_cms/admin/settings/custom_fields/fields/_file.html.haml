@@ -1,0 +1,18 @@
+.group-input-fields-content.input-group{"data-callback-render" => "render_file_form"}
+  %input{:class => "form-control input-value file_name #{"required" if field.options[:required].to_s.to_bool}",
+         :name => "#{field_name}[#{field.slug}][values][][file_name]",
+         :type => "text"}
+  %input{:class => "form-control input-value file_url data-error-place-parent file_format #{"required" if field.options[:required].to_s.to_bool}",
+         "data-formats" => "#{field.options[:formats] || ""}",
+         :name => "#{field_name}[#{field.slug}][values][][file_url]",
+         :type => "url"}
+  %span.input-group-addon.btn_upload{:onclick => "load_upload_file_field(this);return false;"}
+    %i.fa.fa-upload
+    = t('camaleon_cms.admin.button.upload_file')
+
+:javascript
+  function render_file_form(panel, values){
+      values = typeof values == 'object' ? values : $.parseJSON(values || '{}');
+      panel.find('.file_name').val(values['file_name']);
+      panel.find('.file_url').val(values['file_url']);
+  }

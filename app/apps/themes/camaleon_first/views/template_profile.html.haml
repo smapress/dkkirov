@@ -1,0 +1,51 @@
+:ruby
+  post = @post
+  fields = post.get_fields_object
+  gallery_field = fields[:gallery]
+  video_field = fields[:col_videos]
+  advance_field = fields[:advance_col]
+  info_fields = [fields[:info_col_m], fields[:info_col_y], fields[:info_col_ph]]
+
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/pattern_profile')
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/pattern_profile')
+
+.dk-template-profile
+  - content_for :breadcrumb do
+    = render 'partials/breadcrumb', breadcrumb: post.the_breadcrumb
+  .container
+    .row
+      .col-md-8.dk-indent
+        .dk-section.dk-block
+          .dk-cont-title= post.the_title
+          - if (fields[:info_col_m] || fields[:info_col_y] || fields[:info_col_ph])[:values].present?
+            .dktp-info-box
+              = render 'custom_fields/info_field', post: post, fields: info_fields
+          .dk-indent.js-more-content{data: {height: 319,
+                                            showtitle: 'Показать все описание',
+                                            hidetitle: 'Скрыть описание'}}
+            = raw post.the_content
+        - if post.can_commented?
+          %section.dk-section
+            .dk-indent
+              = render 'comments/comments', post: post
+
+        - if gallery_field[:values].select(&:present?).present?
+          .dk-indent
+            .dk-block
+              = render 'custom_fields/image_field', post: post, field: gallery_field
+      - if post.get_fields_object.present? && !defined? skip_fields
+        .col-md-4
+          - if post.has_thumb?
+            .dk-indent
+              .dktp-thumb.dk-block
+                = raw post.the_thumb(class: 'img-responsive')
+          - if advance_field[:values].select(&:present?).present?
+            .dk-indent
+              .dktp-advance.dk-block
+                = render 'custom_fields/advance_field', post: post, field: advance_field
+          - if video_field[:values].select(&:present?).present?
+            .dk-indent
+              .dk-block
+                = render 'custom_fields/video_field', post: post, field: video_field

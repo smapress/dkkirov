@@ -1,0 +1,37 @@
+%body
+  %header#main-header.main-header
+    - if can? :manage, :users
+      %a.logo{:href => "#{current_site.the_admin_url}"}
+        %img{:alt => "#{current_site.the_title}", :src => "#{current_site.the_logo}"}/
+    %nav.navbar.navbar-static-top{role: 'navigation', style: !can?(:manage, :users) && 'margin-left: 0px'}
+      - if can? :manage, :users
+        %a.sidebar-toggle{"data-toggle" => "offcanvas", :href => "#", :role => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      .navbar-custom-menu
+        %ul.nav.navbar-nav
+          = r = {html: ""}; hooks_run("admin_notifications", r); raw(r[:html]);
+          %li
+            %a{:href => "#{current_site.the_url}", :target => "_blank"}
+              %i.fa.fa-home
+          - if can? :manage, :users
+            %li.dropdown.user.user-menu
+              %a.dropdown-toggle{"data-intro2" => "#{t("camaleon_cms.admin.intro.profile")}", "data-position" => "left", "data-toggle" => "dropdown", :href => "#"}
+                %i.fa.fa-bars
+                %span.caret
+              %ul.dropdown-menu
+                %li.user-footer
+                  - if can? :manage, :users
+                    .pull-left
+                      %a.btn.cama_ajax_request{:href => cama_admin_profile_edit_path}= t("camaleon_cms.admin.users.profile")
+                  .pull-right
+                    %a.btn{:href => cama_admin_logout_path} Выйти
+          - else
+            %li
+              %a{:href => cama_admin_logout_path}
+                %i.fa.fa-power-off
+          %li.hidden
+            %a{"data-toggle" => "control-sidebar", :href => "#"}
+              %i.fa.fa-gears

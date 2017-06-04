@@ -1,0 +1,30 @@
+- if post.has_thumb?
+  .panel.panel-default
+    .panel-body
+      = raw post.the_link_thumb({}, {class: "img-responsive img-rounded col-md-12 col-lg-12"})
+- categories = post.the_categories.decorate
+- if categories.present?
+  .panel.panel-default
+    .panel-heading
+      Categories
+    .panel-body
+      %ul
+        - categories.each do |cat|
+          %li
+            %a{:href => "#{cat.the_url}"}= cat.the_title
+.panel.panel-default
+  .panel-heading
+    Latest Posts
+  .panel-body
+    %ul
+      - current_site.the_contents(@post_type.slug).order(created_at: :desc).limit(7).decorate.each do |p|
+        %li
+          %a{:href => "#{p.the_url}"}= p.the_title
+- tags = post.the_tags.decorate
+- if tags.present?
+  .panel.panel-default
+    .panel-heading
+      TAGS
+    .panel-body
+      - tags.each do |post_tag|
+        %a.btn.btn-default.btn-xs{:href => "#{post_tag.the_url}"}= post_tag.the_title

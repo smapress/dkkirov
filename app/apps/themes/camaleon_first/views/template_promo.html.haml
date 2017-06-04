@@ -1,0 +1,56 @@
+:ruby
+  post = @post
+  this_user = post.the_slug == 'director'
+  s_user = []
+
+- current_site.users.decorate.each do |user|
+  - if user.id == 8
+    - s_user = user
+
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/pattern_promo')
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/pattern_promo')
+
+.dk-template-promo
+  - content_for :breadcrumb do
+    = render 'partials/breadcrumb', breadcrumb: post.the_breadcrumb
+  .container
+    .row
+      .col-md-8.dk-indent
+        .dk-section.dk-block.dk-more-content.js-more-content{data: {height: 350,
+                                                             showtitle: 'Показать все описание',
+                                                             hidetitle: 'Скрыть описание'}}
+          .dk-cont-title.dktp-title
+            = post.the_title
+          .dk-indent
+            = this_user ? s_user.get_fields_object[:user_bio][:values] : raw(post.the_content)
+
+          - if this_user && s_user.get_fields_object[:user_phone][:values].present?
+            .dk-indent
+              %i.dktp-icon.fa.fa-phone
+              %span= s_user.get_fields_object[:user_phone][:values]
+
+        - if post.can_commented?
+          %section.dk-section
+            .dk-indent
+              = render 'comments/comments', post: post
+
+
+      .col-md-4.dk-indent
+        .js-side
+          - if s_user.the_avatar.present? || post.has_thumb?
+            .dk-img-item
+              .dk-img-wrapper.dk-block.dktp-thumb.js-thumb
+                %img.dk-img.dktp-img.img-responsive{src: this_user ? s_user.the_avatar : post.the_thumb_url}
+          .row
+            - if this_user
+              .dk-indent.col-md-12.dkts-check-wrap
+                .dk-main-info.dk-block
+                  .dkmi-content
+                    .dkmi-header.dkmi-user
+                      = s_user.the_name
+                    .dkmi-item
+                      = s_user.the_slogan
+            - else
+              = render 'partials/contacts_side', slug: :info_rating, wrap: 'col-md-12 dkts-check-wrap', icon: 'fa-check'

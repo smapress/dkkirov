@@ -1,0 +1,22 @@
+%nav.navbar.navbar-fixed-top.dk-navigation
+  .container
+    .row
+      .col-md-10.dk-desktop-nav
+        %ul.ddn-list
+          %li.ddnl-item.active
+            %a.ddnl-item-link{:href => "#{current_site.the_url}", :rel => "home", :title => "#{current_site.the_title}"} Главная
+          - current_site.post_types.decorate.each do |ptype|
+            %li.ddnl-item.js-ddnl-item
+              %a.ddnl-item-link{href: ptype.the_url}= ptype.the_title
+              - if ptype.the_posts.present?
+                .ddn-down-nav
+                  .container
+                    %ul.col-md-8.ddn-sub-list.ddn-sm-column-2
+                      - ptype.the_posts.decorate.each do |post|
+                        %li.ddnl-sub-item
+                          %a{href: post.the_url, title: post.the_title}= post.the_title
+      .col-md-2.dk-toolbar
+        %span.dkt-icons
+          %i.fa.fa-search.js-search-toggle
+        %span.dkt-icons.js-dkvi-turn-up
+          %i.fa.fa-eye.js-dkvi-toggle

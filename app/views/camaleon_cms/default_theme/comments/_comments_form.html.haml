@@ -1,0 +1,15 @@
+%a.dk-comments-title{data: {effect: 'mfp-zoom-out'}} Добавить коментарий
+.dk-comments-popup.js-dk-comments-popup.mfp-hide.mfp-with-anim
+  - if signin?
+    = form_for post, url:{action: :save_comment, post_id: post.id},
+                     html: {method: 'post', class: 'dk-comments-form'} do |f|
+      = render 'camaleon_cms/flash_messages',
+               flash: (flash[:comment_submit] || {}).with_indifferent_access
+      %textarea#textarea_comments.dk-new-comment{name: 'post_comment[content]',
+                                                 placeholder: ct('comment', default: 'Here your comment')}
+      .text-right
+        %button.dk-button.btn{type: 'submit'} Отправить
+  - else
+    .dk-login-comment
+      = ct('comment_msg', default: 'You must be logged in to post a comment')
+      %a.dk-link-login-comment{href: cama_admin_path}= ct('login', default: 'Login')

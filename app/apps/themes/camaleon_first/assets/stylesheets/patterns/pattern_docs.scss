@@ -1,0 +1,10 @@
+.dk-template-docs {
+  .dk-readmore-action { text-align: right; }
+  .dktd-item {
+    margin: 10px 0; border-bottom: 1px solid #f6f6f6;
+    &:last-child { border: 0; }
+  }
+  .dk-more-content { min-height: 180px; }
+  .dktd-icons { display: inline-block; margin-right: 5px; color: #da1711; }
+  .dktd-block { min-height: 300px; }
+}

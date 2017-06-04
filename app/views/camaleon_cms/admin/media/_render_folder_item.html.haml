@@ -1,0 +1,10 @@
+- (folders rescue {fname => folder}).each do |fname, folder|
+  .media_item.folder_item{"data-key" => fname}
+    .thumb
+      %i.fa.fa-folder
+    .label_thumb
+      = fname
+    - if @show_file_actions
+      .actions
+        %a.del_folder{:href => "#"}
+          %i.fa.fa-trash

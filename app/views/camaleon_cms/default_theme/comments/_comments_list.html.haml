@@ -1,0 +1,15 @@
+- comments.each do |comment| user = comment.comment_user.decorate
+  .dk-comment-box.row{class: "#{"answer" if children.present?}"}
+    .col-md-2.col-sm-2.col-xs-4
+      .dkci-author-img
+        = link_to(image_tag(user.the_avatar, class: "img-responsive"), user.the_url)
+    .col-md-10.col-sm-10.col-xs-8
+      .dk-comment-item
+        .dkci-author
+          %a.dkci-author-link{href: user.the_url}= user.the_name
+          %small.text-muted.pull-right= comment.decorate.the_created_at
+        .dkcb-content
+          = raw comment.content
+
+  - if comment.children.present?
+    = render 'comments/comments_list', comments: comment.children.approveds, children: 'present'

@@ -1,0 +1,16 @@
+.container-fluid
+  = render partial: 'partials/breadcrumb', locals: {breadcrumb: @post.the_breadcrumb}
+  .row
+    .col-md-12.post-view
+      %article.post-content
+        %h1= @post.the_title
+        .author
+          %time{:datetime => ""}= @post.the_created_at
+        .item-content
+          = raw @post.the_content
+        / custom fields
+        - if @post.render_fields.present?
+          %hr/
+          %h4= ct("extra_attributes", default: 'Extra Attributes')
+          = raw @post.render_fields
+= @post.render_fields

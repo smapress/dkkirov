@@ -1,0 +1,20 @@
+%footer#main-footer.main-footer{style: !can?(:manage, :users) && 'margin-left: 0px'}
+  .row
+    - if can? :manage, :users
+      .col-md-6
+        %strong
+          Copyright © 2015-2016
+          %a{:href => "http://camaleon.tuzitio.com"} Camaleon CMS.
+    .hidden-xs{class: can?(:manage, :users) ? 'col-md-6' : 'col-md-12'}
+      - if can? :manage, :users
+        .pull-left
+          %a#link_see_intro{:href => "#", :onclick => "init_intro(); return false;"}
+            %i.fa.fa-tv
+            = I18n.t('camaleon_cms.see_intro')
+            \.
+        .pull-right
+          %b Version
+          = CamaleonCms::VERSION
+      - else
+        .pull-right
+          = current_theme.get_fields_object[:signature][:values]

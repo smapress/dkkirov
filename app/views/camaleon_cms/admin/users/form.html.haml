@@ -1,0 +1,113 @@
+.page-content-wrap{class: !can?(:manage, :users) && 'container'}
+  .row
+    = form_for @user, as: "user", url:{action: @user.new_record? ? :create : :update, id: @user.id}, html:{class: 'validate-user  form-horizontal cama_ajax_request', id: "user_form"} do |f|
+      .col-md-3
+        .panel.panel-default
+          .panel-body
+            = render partial: 'layouts/camaleon_cms/admin/form_error', locals: {data: @user}
+            %h4
+              = @user.fullname if !@user.new_record?
+            %p= @user.new_record? ? "" : @user.get_meta("slogan")
+            #user_image.text-center
+              %img.img-thumbnail.input_upload{:src => "#{@user.new_record? || !@user.get_meta("avatar") ? asset_path("camaleon_cms/admin/img/no_image.jpg") : @user.get_meta("avatar")}"}/
+              %input#user_meta_avatar{:name => "meta[avatar]", :type => "hidden", :value => "#{@user.get_meta("avatar")}"}/
+          .panel-body.user-form-left.form-group-separated
+            %div
+              %a.dk-btn.btn.btn-block.btn-rounded.btn_change_photo{:href => "#"} Изменить фотографию
+            - if can? :manage, :users
+              %div
+                %label.control-label
+                  \##{t('camaleon_cms.admin.table.id')}
+                = f.text_field :id, :class => "form-control required", disabled: "disabled"
+            .row.dk-profile-form-field
+              .col-md-12
+                %label.control-label Логин
+                = f.text_field :username, :class => "form-control required"
+              .col-md-12
+                %label.control-label E-mail
+                = f.email_field :email, :class => "form-control required email"
+            - if @user.new_record?
+              %div
+                %label.control-label= t('camaleon_cms.admin.table.password')
+                = f.password_field :password, :class => "form-control required"
+              %div
+                %label.control-label= t('camaleon_cms.admin.table.repeat_new')
+                = f.password_field :password_confirmation, :class => "form-control required",  "equalTo"=>"#user_password"
+            - if can? :manage, :users
+              %div
+                = f.label "#{t('camaleon_cms.admin.table.role')}", class: "control-label"
+                %div
+                  = f.select :role, current_site.user_roles.reorder(:name).decorate.map{|role| [role.the_title, role.slug]}, {}, {:class => "form-control required"}
+              %hr/
+            .row
+              - if !@user.new_record?
+                .col-md-6.col-xs-6
+                  %a.dk-btn.btn.btn-block.btn-rounded{"data-target" => "#modal_change_password", "data-toggle" => "modal", :href => "#"}= 'Пароль'
+              .col-md-6.col-xs-6
+                %button.dk-btn.btn.btn-block{:type => "submit"}= @user.new_record? ? 'Создать' : 'Обновить'
+      .col-md-6
+        .panel.panel-default
+          .panel-body.form-group-separated
+            .form-group
+              %label.col-md-3.col-xs-5.control-label Имя
+              .col-md-9.col-xs-7
+                = f.text_field :first_name, class: 'form-control required'
+            .form-group
+              %label.col-md-3.col-xs-5.control-label Фамилия
+              .col-md-9.col-xs-7
+                = f.text_field :last_name, class: 'form-control'
+            .form-group
+              %label.col-md-3.col-xs-5.control-label Слоган
+              .col-md-9.col-xs-7
+                %textarea.form-control{:name => "meta[slogan]"}= @user.get_meta("slogan")
+          .panel-footer
+            - if can? :manage, :users
+              %a.btn.btn-default{:href => "#{url_for action: :index}", :role => "back"}= t('camaleon_cms.admin.button.back')
+            %button.dk-btn.btn.pull-right= @user.new_record? ? 'Создать' : 'Обновить'
+
+        .panel.panel-default
+          .panel-body.form-group-separated
+            = render partial: "camaleon_cms/admin/settings/custom_fields/render", locals: {record: @user, field_groups: @user.get_user_field_groups(current_site) }
+          .panel-footer
+            - if can? :manage, :users
+              %a.btn.btn-default{:href => "#{url_for action: :index}", :role => "back"}= t('camaleon_cms.admin.button.back')
+            %button.dk-btn.btn.pull-right= @user.new_record? ? 'Создать' : 'Обновить'
+
+      - if can? :manage, :users
+        .col-md-3
+          .panel.panel-default.form-horizontal
+            .panel-body
+              %h3
+                %span.fa.fa-info-circle
+                = t('camaleon_cms.admin.table.quick_info')
+              %p= t('camaleon_cms.admin.message.quick_info')
+            .panel-body.form-group-separated
+              .form-group
+                %label.col-md-4.col-xs-5.control-label= t('camaleon_cms.admin.table.last_visit')
+                .col-md-8.col-xs-7.line-height-30= @user.last_login_at
+              .form-group
+                %label.col-md-4.col-xs-5.control-label= t('camaleon_cms.admin.table.registration')
+                .col-md-8.col-xs-7.line-height-30= @user.created_at
+          = r = { html: ''}; hooks_run('user_update_more_actions_form', r); raw(r[:html]);
+      = r = { html: ''}; hooks_run('user_update_more_actions', r); raw(r[:html]);
+
+#modal_change_password.modal.animated.fadeIn{"aria-hidden" => "true", "aria-labelledby" => "smallModalHead", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+          %span.sr-only= t('camaleon_cms.admin.button.close')
+        %h4#smallModalHead.modal-title= t('camaleon_cms.admin.button.change_password')
+      = form_for @user, as: "user", url: @user.new_record? ? cama_admin_users_path : cama_admin_user_updated_ajax_path(@user), html:{id: "profie-form-ajax-password", class: 'validate-password form-ajax-password modal-body'} do |f|
+        .form-group
+          %label.control-label= t('camaleon_cms.admin.table.new_password')
+          %input#pass_new.form-control.required{:name => "password[password]", :type => "password"}/
+        .form-group
+          %label.control-label= t('camaleon_cms.admin.table.repeat_new')
+          %input.form-control.required{:equalto => "#pass_new", :name => "password[password_confirmation]", :type => "password"}/
+        .modal-footer
+          %button.btn.btn-primary{:type => "submit"}= t('camaleon_cms.admin.button.proccess')
+          %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}= t('camaleon_cms.admin.button.close')
+%script{:type => "application/javascript"}
+  jQuery(function ($) { init_profile_form(); });
