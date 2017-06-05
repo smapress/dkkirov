@@ -7,7 +7,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma', '~> 3.0'
 
-# gem 'capistrano-rails', group: :development
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-bundler', '~> 1.2'
+  gem 'capistrano-ssh-doctor', '~> 1.0'
+  gem 'capistrano-puma'
+end
 
 group :assets do
   gem 'coffee-rails', '~> 4.1.0'
