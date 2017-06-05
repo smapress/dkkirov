@@ -1,13 +1,16 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.2.5.1'
-gem 'sqlite3'
+gem 'pg'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma', '~> 3.0'
 
-# gem 'capistrano-rails', group: :development
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
+end
 
 group :assets do
   gem 'coffee-rails', '~> 4.1.0'
