@@ -1,18 +1,19 @@
 source 'http://rubygems.org'
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '4.2.7.1'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'puma', '~> 3.0'
 
 group :development do
+  gem 'erb2haml'
+  gem 'web-console', '~> 2.0'
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-bundler', '~> 1.2'
-  gem 'capistrano-ssh-doctor', '~> 1.0'
   gem 'capistrano-puma'
+  gem 'puma'
 end
 
 group :assets do
@@ -29,9 +30,9 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :development do
-  gem 'erb2haml'
-  gem 'web-console', '~> 2.0'
+group :production do
+  gem 'rails_12factor', '0.0.2'
+  gem 'unicorn'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
