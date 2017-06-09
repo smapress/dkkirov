@@ -1,12 +1,13 @@
 app.modules.visualImpairedBar = (function(self) {
 
   var
-    MINFONTSIZE = 10,
-    MAXFONTSIZE = 24,
+    MINFONTSIZE = 11,
+    MAXFONTSIZE = 21,
     
     $body = $('.js-dk-body'),
-    $headers = $('.js-header'),
-    $images = $('.js-image'),
+    $flash = $('.js-flash-messages'),
+    $headers = $('.js-dk-content, .js-dk-footer'),
+    $images = $('.js-vi-img'),
     $skinOne = $('.js-skin-one'),
     $skinTwo = $('.js-skin-two'),
     $skinThree = $('.js-skin-three'),
@@ -17,7 +18,7 @@ app.modules.visualImpairedBar = (function(self) {
 
     defOptions = {
       fontSize: $body.css('font-size'),
-      skinTemplate: 'dk-color-skin'
+      skinTemplate: 'dk-color-skin-'
     },
     cookie = {
       expires: 10000,
@@ -26,13 +27,19 @@ app.modules.visualImpairedBar = (function(self) {
         vibFontSizes: 'vibFontSizes',
         vibImages: 'vibImages',
         vibHeaders: 'vibHeaders',
-        vibColorsOne: 'vibColorsOne',
-        vibColorsTwo: 'vibColorsTwo',
-        vibColorsThree: 'vibColorsThree'
+        vibColors_one: 'vibColors_one',
+        vibColors_two: 'vibColors_two',
+        vibColors_three: 'vibColors_three',
+        vibFlashOff: 'vibFlashOff'
       }
     };
 
   function _init() {
+
+    if (_cookieState() && $.cookie(cookie.names.vibFlashOff) != 'off') {
+      _flashMessage();
+    }
+
     if ($.cookie(cookie.names.vibFontSizes) != 'default') {
       $body.css({fontSize: $.cookie(cookie.names.vibFontSizes)});
     }
@@ -42,19 +49,22 @@ app.modules.visualImpairedBar = (function(self) {
     if ($.cookie(cookie.names.vibHeaders) == 'hidden') {
       $headers.addClass('dk-header-off');
     }
-    if ($.cookie(cookie.names.vibColorsOne) == 'visible') {
-      $body.addClass('dk-color-skinOne');
+    if ($.cookie(cookie.names.vibColors_one) == 'visible') {
+      $body.addClass('dk-color-skin-one');
       $skinOne.addClass('dkvi-color-visible');
     }
-    if ($.cookie(cookie.names.vibColorsTwo) == 'visible') {
-      $body.addClass('dk-color-skinTwo');
+    if ($.cookie(cookie.names.vibColors_two) == 'visible') {
+      $body.addClass('dk-color-skin-two');
       $skinTwo.addClass('dkvi-color-visible');
     }
-    if ($.cookie(cookie.names.vibColorsThree) == 'visible') {
-      $body.addClass('dk-color-skinThree');
+    if ($.cookie(cookie.names.vibColors_three) == 'visible') {
+      $body.addClass('dk-color-skin-three');
       $skinThree.addClass('dkvi-color-visible');
     }
     _changeState();
+    $doc.trigger('moreContent');
+    $doc.trigger('dynamicAlign');
+    $doc.trigger('responseSettings');
   }
   
   function _actionFontSize($element) {
@@ -125,16 +135,16 @@ app.modules.visualImpairedBar = (function(self) {
         $body.toggleClass(defOptions.skinTemplate + thisData);
         $this.toggleClass('dkvi-color-visible');
         if($this.hasClass('dkvi-color-visible')) {
-          $.cookie('vibColors' + thisData, 'visible', cookie);
+          $.cookie('vibColors_' + thisData, 'visible', cookie);
         } else {
-          $.cookie('vibColors' + thisData, 'default', cookie);
+          $.cookie('vibColors_' + thisData, 'default', cookie);
         }
       } else {
         if($item.hasClass('dkvi-color-visible')) {
           $body.removeClass(defOptions.skinTemplate + dataItem);
           $item.removeClass('dkvi-color-visible');
         }
-        $.cookie('vibColors' + dataItem, 'default', cookie);
+        $.cookie('vibColors_' + dataItem, 'default', cookie);
       }
     });
   }
@@ -143,9 +153,11 @@ app.modules.visualImpairedBar = (function(self) {
     if (_cookieState()) {
       $turnUpBar.addClass('dkvi-turn-up');
       $clearSettings.removeClass('dkvi-disable');
+      $body.addClass('dk-body-vi-action');
     } else {
       $turnUpBar.removeClass('dkvi-turn-up');
       $clearSettings.addClass('dkvi-disable');
+      $body.removeClass('dk-body-vi-action');
     }
   }
 
@@ -168,55 +180,82 @@ app.modules.visualImpairedBar = (function(self) {
     });
   }
 
+  function _flashMessage() {
+    $flash.flashMessage({
+      how: 'append',
+      timer: false,
+      text_action: 'Не показывать сообщение',
+      text_message: 'У вас используется версия сайта для слабовидящих',
+      class_wrap: 'dk-flash-message-wrap container',
+      class_message: 'col-md-8 col-xs-10 dk-flash-message',
+      class_icon: 'col-md-1 col-xs-2 dk-flash-message-icon fa fa-eye',
+      class_action: 'col-md-3 col-xs-10 col-md-offset-0 col-xs-offset-2 dk-flash-close js-dk-flash-close'
+    });
+  }
+
   function _resetSettings() {
-    $body.css('font-size', defOptions.fontSize).removeClass('dk-color-skinOne dk-color-skinTwo dk-color-skinThree');
+    $body.css('font-size', defOptions.fontSize).removeClass('dk-color-skin-one dk-color-skin-two dk-color-skin-three');
+    $flash.hide();
     $images.show();
     $headers.removeClass('dk-header-off');
     $turnUpBar.removeClass('dkvi-turn-up');
     $clearSettings.addClass('dkvi-disable');
     $fontSizeChanger.removeClass('dkvi-disable');
     $colorsItems.removeClass('dkvi-color-visible');
+    $body.removeClass('dk-body-vi-action');
   }
   
   function _listener() {
-    $doc.on('click', '.js-main-header', function(event) {
-      var
-        $target = $(event.target);
+    $doc
+      .on('click', '.js-main-header', function(event) {
+        var
+          $target = $(event.target);
 
-      if($target.hasClass('js-dkvi-font-size')) {
-        _actionFontSize($target);
-        _changeState();
-      }
-      if($target.hasClass('js-dkvi-more-headers')) {
-        _actionHeaders();
-        _changeState();
-      }
-      if($target.hasClass('js-dkvi-more-img')) {
-        _actionImages();
-        _changeState();
-      }
-      if($target.hasClass('js-dkvi-more-color')) {
-        _actionColors($target);
-        _changeState();
-      }
-      if($target.hasClass('js-dkvi-reset')) {
-        _resetSettings();
-        _clearCookie();
-      }
-      if($target.hasClass('js-dkvi-more-colors')) {
-        $target.parent().addClass('dkvi-colors');
-      }
-      if($target.hasClass('js-dkvi-more-sub-close')) {
-        $('.js-dkvi-more-colors').parent().removeClass('dkvi-colors');
-      }
-      if($target.hasClass('js-dkvi-settings')) {
-        $target.toggleClass('dkvi-active');
-        $('.js-dkvi-more').toggle();
-      }
-      if($target.hasClass('js-dkvi-toggle')) {
-        $body.toggleClass('dk-visual-impaired-visible');
-      }
-    });
+        if($target.hasClass('js-dk-flash-close')) {
+          $flash.hide();
+          $.cookie(cookie.names.vibFlashOff, 'off', cookie);
+        }
+
+        if($target.hasClass('js-dkvi-font-size')) {
+          _actionFontSize($target);
+          _changeState();
+          $doc.trigger('moreContent');
+          $doc.trigger('dynamicAlign');
+          $doc.trigger('responseSettings');
+        }
+        if($target.hasClass('js-dkvi-more-headers')) {
+          _actionHeaders();
+          _changeState();
+        }
+        if($target.hasClass('js-dkvi-more-img')) {
+          _actionImages();
+          _changeState();
+        }
+        if($target.hasClass('js-dkvi-more-color')) {
+          _actionColors($target);
+          _changeState();
+        }
+        if($target.hasClass('js-dkvi-reset')) {
+          _resetSettings();
+          _clearCookie();
+          $doc.trigger('moreContent');
+          $doc.trigger('dynamicAlign');
+          $doc.trigger('responseSettings');
+        }
+        if($target.hasClass('js-dkvi-more-colors')) {
+          $target.parent().addClass('dkvi-colors');
+        }
+        if($target.hasClass('js-dkvi-more-sub-close')) {
+          $('.js-dkvi-more-colors').parent().removeClass('dkvi-colors');
+        }
+        if($target.hasClass('js-dkvi-settings')) {
+          $target.toggleClass('dkvi-active');
+          $('.js-dkvi-more').toggle();
+        }
+        if($target.hasClass('js-dkvi-toggle')) {
+          $body.toggleClass('dk-visual-impaired-visible');
+        }
+      });
   }
 
   self.load = function() {

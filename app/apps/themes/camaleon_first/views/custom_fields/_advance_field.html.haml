@@ -2,7 +2,7 @@
   key = field[:options][:field_key]
 
 .dk-custom-fields{class: "dk-custom-field-#{key}"}
-  %strong.dk-field-name= cama_print_i18n_value(field[:name])
+  %strong.dk-field-name.dk-vi-title= cama_print_i18n_value(field[:name])
   .dk-field-box.dk-gallery.js-gallery{class: "dk-field-#{key}"}
     .dkfb-items
       - field[:values].each do |value|

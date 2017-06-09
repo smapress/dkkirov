@@ -18,7 +18,7 @@
     .row
       .col-md-8.dk-indent
         .dk-section.dk-block
-          .dk-cont-title= post.the_title
+          .dk-cont-title.dk-vi-title= post.the_title
           - if (fields[:info_col_m] || fields[:info_col_y] || fields[:info_col_ph])[:values].present?
             .dktp-info-box
               = render 'custom_fields/info_field', post: post, fields: info_fields
@@ -32,13 +32,13 @@
               = render 'comments/comments', post: post
 
         - if gallery_field[:values].select(&:present?).present?
-          .dk-indent
+          .dk-indent.js-vi-img
             .dk-block
               = render 'custom_fields/image_field', post: post, field: gallery_field
       - if post.get_fields_object.present? && !defined? skip_fields
         .col-md-4
           - if post.has_thumb?
-            .dk-indent
+            .dk-indent.js-vi-img
               .dktp-thumb.dk-block
                 = raw post.the_thumb(class: 'img-responsive')
           - if advance_field[:values].select(&:present?).present?
@@ -46,6 +46,6 @@
               .dktp-advance.dk-block
                 = render 'custom_fields/advance_field', post: post, field: advance_field
           - if video_field[:values].select(&:present?).present?
-            .dk-indent
+            .dk-indent.js-vi-img
               .dk-block
                 = render 'custom_fields/video_field', post: post, field: video_field

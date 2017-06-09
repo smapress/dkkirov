@@ -1,0 +1,16 @@
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/type_list')
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/type_list')
+
+.dk-search-list.dk-type-list
+  .row
+    - @posts.each_with_index do |post, index|
+      = render partial: 'partials/post_list_item', locals: {post: post.decorate, index: index}
+  - if @posts.empty?
+    .dk-section.dk-pattern
+      %h4.dk-title-type-list.dk-title.dk-block.dk-vi-title По вашему запросу ничего не найдено
+  = will_paginate @posts,
+                  previous_label: '<i class="fa fa-angle-left"></i>',
+                  next_label: '<i class="fa fa-angle-right"></i>',
+                  renderer: BootstrapPagination::Rails if @posts.present?

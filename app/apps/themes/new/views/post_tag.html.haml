@@ -1,6 +1,6 @@
 %article#tag-view{:class => "tag_#{@post_tag.slug}"}
   = render partial: 'partials/breadcrumb', locals: {breadcrumb: @post_tag.the_breadcrumb }
-  %h1= @post_tag.the_title
+  %h1.dk-vi-title= @post_tag.the_title
   .content
     = raw @post_tag.the_content
   %br/

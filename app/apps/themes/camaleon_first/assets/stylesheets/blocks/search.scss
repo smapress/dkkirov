@@ -1,24 +1,23 @@
-@import '../helpers/add_ons';
+@import '../helpers/placeholder';
 
 .dk-search {
-  position: relative; display: none; z-index: 21;
+  position: relative; display: none; z-index: 21; font-size: 18px; height: 60px; line-height: 60px;
   .dks-form {
     width: 100%; font-size: 100%; box-sizing: border-box;
     &:before,
     .dksf-close { position: absolute; top: 0; }
     &:before { content: attr(data-title); left: 0; color: #7b7b7b; }
     .dksf-close {
-      width: 20px; height: 60px; right: 0; background: #fff; text-align: right; box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9);
+      width: 20px; height: 60px; right: 0; background: #fff; text-align: right; box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9); color: #888; font-size: 16px;
       &:after { content: '✖'; right: 0; }
       &:hover { color: #da1711; cursor: pointer; }
     }
   }
   .dksf-input {
-    @include placeholder(#ccc); color: #ccc; padding: 20px 14px 20px 135px; line-height: normal; box-sizing: border-box; width: 100%; border: none; outline: 0;
+    @include placeholder(#ccc); width: 100%; color: #ccc; box-sizing: border-box; border: none; outline: 0; line-height: 58px; padding-left: 150px;
   }
 }
 .dk-search-visible {
-  .dk-header { box-shadow: 0 0 5px 1px #666; }
   .dk-search { display: block; }
-  .dk-navigation { display: none; }
+  .dk-navigation { display: none !important; }
 }

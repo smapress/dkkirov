@@ -1,5 +1,6 @@
-.dk-navigation {
-  background: #fff; border-bottom: 1px solid #f6f6f6; line-height: 60px;
+.dk-navbar {
+  background: #fff; border-bottom: 1px solid #f6f6f6;
+  .dk-navigation { line-height: 60px; }
   .icon-bar { background: #da1711; }
   .dk-desktop-nav { position: static !important; }
   .ddn-list { padding: 0; margin: 0; user-select: none; }

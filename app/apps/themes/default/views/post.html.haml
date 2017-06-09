@@ -4,7 +4,7 @@
       - if @post.has_thumb?
         .entry-thumbnail
           = raw @post.the_thumb
-      %h1.entry-title= @post.the_title
+      %h1.entry-title.dk-vi-title= @post.the_title
     / .entry-header
     .entry-content
       = raw @post.the_content

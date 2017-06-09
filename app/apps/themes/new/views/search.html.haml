@@ -1,6 +1,6 @@
 %article#search-view
   = render partial: 'partials/breadcrumb', locals: {breadcrumb: breadcrumb_draw }
-  %h1
+  %h1.dk-vi-title
     = ct('search_msg', default: 'Search text: ')
     = params[:q]
   .panel.panel-primary.post_list.no-line

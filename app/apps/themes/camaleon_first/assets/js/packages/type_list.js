@@ -1,4 +1,4 @@
 /*
-//= require ../patterns/pattern_profile
+//= require ../modules/gallery
  *= require ../plugins/magnific_popup
 */

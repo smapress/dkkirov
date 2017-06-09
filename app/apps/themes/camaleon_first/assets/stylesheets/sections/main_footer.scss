@@ -1,3 +1,11 @@
+@import '../responsive/main_footer';
+
 .dk-footer {
   background: #fff; padding: 20px 0;
+  .ddn-list { column-count: 3; padding: 0; border-bottom: 1px solid #f6f6f6; padding-bottom: 20px; }
+  .ddnl-item { list-style: none; }
+  .ddnl-item-link {
+    color: #555;
+    &:hover { color: #da1711; }
+  }
 }

@@ -1,47 +1,39 @@
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/pattern_events')
+- content_for :js_bottom do
+  = javascript_include_tag theme_asset('js/packages/pattern_events')
+
 - args={custom_slider: nil, custom_footer: nil, extra_footer: nil, custom_sidebar: nil, product: @post}; hooks_run('ecommerce_product_page', args) # permit custom footer
-= render 'post_types/commerce/cart_widget'
-.row
-  .col-md-9.post-view
-    %article#product_view.post-content
-      .row
-        .col-md-6
-          - unless args[:custom_slider].present?
-            #ecommerce-product-slider.carousel.slide{"data-interval" => "false", "data-ride" => "carousel"}
-              / Indicators
-              %ol.carousel-indicators
-                - @post.the_photos.each_with_index do |pthoto, index|
-                  %li{:class => "#{'active' if index == 0}", "data-slide-to" => index, "data-target" => "#ecommerce-product-slider"}
-              / Wrapper for slides
-              .carousel-inner{:role => "listbox"}
-                - @post.the_photos.each_with_index do |pthoto, index|
-                  %div{:class => "item #{'active' if index == 0}"}
-                    %img.center-block{:src => pthoto}/
-              / Controls
-              %a.left.carousel-control{"data-slide" => "prev", :href => "#ecommerce-product-slider", :role => "button"}
-                %span.glyphicon.glyphicon-chevron-left.fa.fa-chevron-left{"aria-hidden" => "true"}
-                %span.sr-only Previous
-              %a.right.carousel-control{"data-slide" => "next", :href => "#ecommerce-product-slider", :role => "button"}
-                %span.glyphicon.glyphicon-chevron-right.fa.fa-chevron-right{"aria-hidden" => "true"}
-                %span.sr-only Next
-          - else
-            = raw args[:custom_slider]
-        .col-md-6
-          = render 'post_types/commerce/product_info', product: @post
-      - unless args[:custom_footer].present?
-        .row
-          .col-md-12
-            %h3= t('plugins.ecommerce.single.descr', default: 'Description')
-            .item-content
+- content_for :breadcrumb do
+  = render 'partials/breadcrumb', breadcrumb: @post.the_breadcrumb
+
+.col-md-12.dk-template-events
+  %article#product_view.post-content
+    .row
+      .col-md-8
+        .dk-section.dk-indent.dk-block.js-dynamic-ref
+          .dk-title
+            = @post.the_title
+          .dkte-event-block
+            - if @post.get_fields_object[:datatime_event].present?
+              .dkte-event-date.dk-indent
+                Дата и время:
+                = @post.get_fields_object[:datatime_event][:values].gsub(' ', '/')
+            - if @post.the_price.present?
+              .dkte-event-price.dk-indent
+                - if @post.the_price.gsub(/\D/, '').to_i == 0
+                  Бесплатно
+                - else
+                  Стоимость:
+                  = @post.the_price.gsub(/[^0-9,.]/, '').to_i
+                  руб.
+                  .dkte-event-price.dk-indent
+                    %a{href: 'http://perm.kassy.ru/building/dvorec-kultury-im-s-m-kirova-13/29/', target: 'blank'} Купить билет
+          .dkte-event-block
+            .dkte-event-content.dk-indent
               = raw @post.the_content
-          - if (attrs = @post.the_attribute_fields('ecommerce_attrs').to_a).present? && attrs.map{|k,v| v.present? }.any?
-            .col-md-12
-              %h3= t('plugins.ecommerce.single.attrs', default: 'Attributes')
-              %table.table.table-bordered
-                - attrs.each_with_index do |attr, index|
-                  %tr
-                    %td
-                      %strong= attr['attr'].to_s.translate
-                    %td= attr['value'].to_s.translate
-      - else
-        = raw args[:custom_footer]
-      = raw args[:extra_footer] if args[:extra_footer].present?
+      .col-md-4.js-vi-img
+        .dk-section.dk-indent.dk-block
+          .dk-img-item
+            .dk-img-wrapper.js-dynamic-side
+              = @post.the_thumb(class: 'dk-img img-responsive dktl-img js-dynamic-item')

@@ -1,0 +1,6 @@
+.dk-search
+  = form_tag(cama_search_path, method: 'get',
+                               class: 'dks-form',
+                               data: {title: 'Поиск по сайту:'}) do
+    %input.dksf-input{name: 'q', type: 'text', placeholder: 'введите запрос, например концерт академического хора'}
+    .dksf-close.js-search-toggle

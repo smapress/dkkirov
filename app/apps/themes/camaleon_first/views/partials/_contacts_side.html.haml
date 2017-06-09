@@ -1,14 +1,19 @@
 :ruby
-  field = current_theme.get_fields_object[slug]
+  field = current_theme.get_fields_object
 
-- if field.present?
+- if field[slug].present?
   .dk-indent{class: local_assigns.fetch(:wrap, 'col-md-12')}
     .dk-main-info.dk-block
       - if local_assigns[:icon]
-        %i.dkmi-icon.fa{class: local_assigns[:icon]}
+        %a{href: field[slug][:values][0], target: 'blank'}
+          %i.dkmi-icon.fa{class: local_assigns[:icon]}
       .dkmi-content
-        .dkmi-header
-          = field[:name]
+        .dkmi-header.dk-vi-title
+          = field[slug][:name]
         .dkmi-item
-          %a{href: field[:values][0], target: 'blank'}
-            = field[:values][1]
+          %a{href: field[slug][:values][0], target: 'blank'}
+            = field[slug][:values][1]
+        - if field[slug] == field[:info_contact]
+          %iframe.dkmi-map{src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4228.883302116352!2d55.95070479947576!3d57.99728953034644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8ba1d5a2fe3e7%3A0x84c83a9c5483639f!2z0JTQstC-0YDQtdGGINCa0YPQu9GM0YLRg9GA0Ysg0LjQvC4g0KEu0Jwu0JrQuNGA0L7QstCw!5e0!3m2!1sru!2sru!4v1496872684438',
+                           frameborder: 0,
+                           allowfullscreen: true}

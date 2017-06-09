@@ -11,11 +11,11 @@ app.modules.moreContent = (function(self) {
         thumb = parseInt($('.js-thumb').css('padding')),
         heightSide = $('.js-side').outerHeight(),
         heightDef = $item.outerHeight(),
-        heightItem = $item.data('height'),
+        heightItem = $item.data('height') || parseInt(($item).css('max-height')),
         showTitle = $item.data('showtitle'),
         hideTitle = $item.data('hidetitle');
 
-      if (thumb) {
+      if (thumb && $.cookie('vibImages') != 'hidden') {
         heightItem = heightSide - thumb;
       }
 
@@ -30,8 +30,17 @@ app.modules.moreContent = (function(self) {
     });
   }
 
+  function _listener() {
+    $doc
+      .on('moreContent', function() {
+        $('.js-more-content').css('height', 'auto');
+        _moreContent();
+      });
+  }
+
   self.load = function() {
     _init();
+    _listener();
   };
 
   return self;

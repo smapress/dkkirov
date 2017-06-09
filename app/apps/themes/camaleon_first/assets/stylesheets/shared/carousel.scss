@@ -26,7 +26,7 @@
   .dk-gallery-state-change,
   .dk-gallery-prev,
   .dk-gallery-next {
-    position: absolute; top: 4px; background: #f7f7f7; padding: 2px 10px; cursor: pointer; color: #888; text-decoration: none; transition: .125s; font-size: 14px;
+    position: absolute; top: 4px; background: #f7f7f7; padding: 2px 10px; cursor: pointer; color: #888; text-decoration: none; transition: .125s; font-size: 14px !important;
     &:hover { background: #da1711; color: #fff; }
   }
   .dk-gallery-prev { right: 30px; }

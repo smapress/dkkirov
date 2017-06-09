@@ -1,0 +1,31 @@
+= javascript_include_tag "camaleon_cms/admin/login_manifest"
+
+.login-body
+  %h3.login-box-msg Пожалуйста войдите
+  = form_for(@user, as: "user", :html => { method: "post", role: "form", id:"login_user", class: "form-horizontal cama_form_validate" }, :url => cama_admin_login_path ) do |f|
+    .form-group
+      .col-md-12
+        = f.text_field :username, :class => "form-control required", autofocus: true, :placeholder => 'Логин'
+    .form-group
+      .col-md-12
+        = f.password_field :password, :class => "form-control required", :placeholder => 'Пароль'
+    .form-group
+      .col-md-12
+        = raw cama_captcha_tags_if_under_attack("login")
+    .row
+      .col-xs-12
+        %button.btn.btn-block.btn-flat.dk-btn{:type => "submit"} Войти
+    %hr/
+    = raw cama_content_before_draw
+    = r = {html: "", f: f}; hooks_run("user_login_form", r); raw(r[:html]);
+    .row
+      - if current_site.get_option('permit_create_account', false)
+        .col-xs-6
+          Вы уверены ?
+          %br/
+          %a{:href => cama_admin_register_path} Создать аккаунт
+      .col-xs-6
+        %a{:href => cama_admin_forgot_path} Забыли пароль?
+
+:javascript
+  var kk = "#{cama_get_session_id}";

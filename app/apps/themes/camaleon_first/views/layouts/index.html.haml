@@ -24,7 +24,7 @@
       <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
   %body.dk-body{class: "#{is_home? ? 'home-page' : 'inner-page'} #{'js-dk-body'}"}
     = yield :flash_messages
-    %header.dk-header
+    %header.dk-header.js-main-header
       .container
         .row
           .col-md-1.col-xs-3
@@ -34,9 +34,9 @@
             .dk-header-title
               Дворец культуры им. С.М. Кирова
               %br
-              .dk-header-sub-title Департамент культуры и молодежной политики администрации города Перми
+              .dk-header-sub-title.dk-vi-title Департамент культуры и молодежной политики администрации города Перми
       //= render 'navigation/main_navigation'
-      %nav.navbar.navbar-fixed-top.dk-navigation{role: 'navigation'}
+      %nav.navbar.navbar-fixed-top.dk-navbar{role: 'navigation'}
         .container
           = raw current_site.draw_languages 'language-list list-inline', true
           .navbar-header
@@ -46,21 +46,30 @@
               %span.icon-bar
               %span.icon-bar
               %span.icon-bar
-          .navbar-collapse.collapse.navbar-responsive-collapse
-            .ddnl-item
-              %a.ddnl-item-link{href: current_site.the_url, rel: 'homepage'} Главная
-            = raw draw_menu({menu_slug: 'dk-menu',
-                             container_class: 'ddn-list',
-                             item_container: 'li',
-                             item_class: 'ddnl-item',
-                             item_class_parent: 'ddn-down-nav',
-                             item_current: 'active-item',
-                             link_current: 'active-link',
-                             link_class: 'ddnl-item-link'})
-          //= render partial: 'partials/search_form'
-      = yield :breadcrumb
+          .navbar-collapse.collapse.navbar-responsive-collapse.dk-navigation
+            .row
+              .col-md-10
+                .ddnl-item
+                  %a.ddnl-item-link{href: current_site.the_url, rel: 'homepage'} Главная
+                = raw draw_menu({menu_slug: 'dk-menu',
+                                 container_class: 'ddn-list',
+                                 item_container: 'li',
+                                 item_class: 'ddnl-item',
+                                 item_class_parent: 'ddn-down-nav',
+                                 item_current: 'active-item',
+                                 link_current: 'active-link',
+                                 link_class: 'ddnl-item-link'})
+              .col-md-2.dk-toolbar
+                %span.dkt-icons
+                  %i.fa.fa-search.js-search-toggle
+                %span.dkt-icons.js-dkvi-turn-up
+                  %i.fa.fa-eye.js-dkvi-toggle
 
-    .dk-content
+          = render partial: 'partials/visual_impaired_bar'
+          = render partial: 'partials/search_form'
+      = yield :breadcrumb
+      .js-flash-messages
+    .dk-content.js-dk-content
       .container
         .row
           - if content_for? :title_section
@@ -73,18 +82,25 @@
               .row
                 = yield :dk_sidebar
 
-    %footer.dk-footer#footer
+    %footer.dk-footer#footer.js-dk-footer
       .container
         .row
-          .col-lg-4
+          .col-md-12
+            = raw draw_menu({menu_slug: 'footer_menu',
+                             container_class: 'ddn-list',
+                             item_container: 'li',
+                             item_class: 'ddnl-item',
+                             item_class_parent: 'ddn-down-nav',
+                             item_current: 'active-item',
+                             link_current: 'active-link',
+                             link_class: 'ddnl-item-link'})
+        .row
+          .col-md-2.col-xs-12
             #text-2.widget-wrapper.widget_text
               = raw current_theme.the_field('footer_left')
-          .col-lg-4
+          .col-md-10.col-xs-12
             #text-3.widget-wrapper.widget_text
               = raw current_theme.the_field('footer_center')
-          .col-lg-4
-            #text-4.widget-wrapper.widget_text
-              = raw current_theme.the_field('footer_right')
 
     = javascript_include_tag theme_asset('js/packages/init'), defer: true
     = yield :js_bottom

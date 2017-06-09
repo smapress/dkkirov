@@ -11,9 +11,9 @@
   .dk-gallery-prev { right: 45px !important; }
 }
 .dk-news-line,
-.dk-events-line { max-height: 669px; }
+.dk-events-line { max-height: 700px; }
 .dk-events-line {
-  .dk-event-title { white-space: nowrap; display: block; font-size: 115%; padding: 18px 0; margin: 0 5px; border-top: 1px solid #f6f6f6; }
+  .dk-event-title { white-space: nowrap; overflow: hidden; display: block; font-size: 115%; padding: 18px 0; margin: 0 5px; border-top: 1px solid #f6f6f6; }
 }
 .dk-news-line {
   .dk-news-line-header { width: 100%; }
@@ -41,3 +41,4 @@
 .dk-services-line {
   .dk-col-line-link { min-height: 50px; display: inline-block; margin: 0 5px; font-size: 125%; color: #da1727; }
 }
+.dk-collectives-img { max-height: 130px; }

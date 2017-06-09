@@ -1,3 +1,6 @@
 //= require ../plugins/jcarousel
-//= require ../shared/carousel
-//= require ../patterns/pattern_home
+//= require ../plugins/readmore
+
+//= require ../modules/carousel
+//= require ../modules/more_content
+//= require ../modules/home_resp

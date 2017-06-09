@@ -97,17 +97,17 @@
       .modal-header
         %button.close{"data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} ×
-          %span.sr-only= t('camaleon_cms.admin.button.close')
-        %h4#smallModalHead.modal-title= t('camaleon_cms.admin.button.change_password')
+          %span.sr-only Закрыть
+        %h4#smallModalHead.modal-title Изменить пароль
       = form_for @user, as: "user", url: @user.new_record? ? cama_admin_users_path : cama_admin_user_updated_ajax_path(@user), html:{id: "profie-form-ajax-password", class: 'validate-password form-ajax-password modal-body'} do |f|
         .form-group
-          %label.control-label= t('camaleon_cms.admin.table.new_password')
+          %label.control-label Новый пароль
           %input#pass_new.form-control.required{:name => "password[password]", :type => "password"}/
         .form-group
-          %label.control-label= t('camaleon_cms.admin.table.repeat_new')
+          %label.control-label Повторно введие новый пароль
           %input.form-control.required{:equalto => "#pass_new", :name => "password[password_confirmation]", :type => "password"}/
         .modal-footer
-          %button.btn.btn-primary{:type => "submit"}= t('camaleon_cms.admin.button.proccess')
-          %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}= t('camaleon_cms.admin.button.close')
+          %button.btn.btn-primary{:type => "submit"} Обновить
+          %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Закрыть
 %script{:type => "application/javascript"}
   jQuery(function ($) { init_profile_form(); });

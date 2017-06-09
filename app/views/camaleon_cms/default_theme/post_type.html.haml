@@ -9,7 +9,7 @@
 
 .col-md-12.dk-indent.dk-type-list{class: "dk-type-list-#{@post_type.slug}"}
   .dk-section.dk-pattern
-    %h1.dk-title-type-list.dk-title.dk-block
+    %h1.dk-title-type-list.dk-title.dk-block.dk-vi-title
       = @post_type.the_title
       = @post_type.the_edit_link
 
@@ -44,3 +44,5 @@
   = render 'partials/contacts_side', slug: :info_vk, icon: 'fa-vk'
   = render 'partials/contacts_side', slug: :info_youtube, icon: 'fa-youtube'
   = render 'partials/contacts_side', slug: :info_inst, icon: 'fa-instagram'
+  - if @post_type.try(:slug) != 'about'
+    = render 'partials/contacts_side', slug: :info_contact, icon: 'fa-home'

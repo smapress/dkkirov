@@ -1,0 +1,36 @@
+- content_for :style_head do
+  = stylesheet_link_tag theme_asset('stylesheets/package/pattern_contacts')
+
+.dk-template-contacts
+  - content_for :breadcrumb do
+    .dk-breadcrumb
+      .container
+        %ol.breadcrumb
+          %li.active
+            = @post.the_title
+  .container
+    .row
+      = render 'partials/contacts_side', slug: :info_tel, icon: 'fa-phone', wrap: 'col-md-4'
+      = render 'partials/contacts_side', slug: :info_email, icon: 'fa-envelope-o', wrap: 'col-md-4'
+      = render 'partials/contacts_side', slug: :info_rating, icon: 'fa-check', wrap: 'col-md-4'
+      = render 'partials/contacts_side', slug: :info_vk, icon: 'fa-vk', wrap: 'col-md-4'
+      = render 'partials/contacts_side', slug: :info_youtube, icon: 'fa-youtube', wrap: 'col-md-4'
+      = render 'partials/contacts_side', slug: :info_inst, icon: 'fa-instagram', wrap: 'col-md-4'
+    .row
+      .col-md-6.dk-indent
+        .dk-section.dk-block.dktc-top-block
+          = raw @post.get_fields_object[:contacts_content][:values]
+      .col-md-6.dk-indent
+        .dk-section.dk-block.dktc-top-block
+          .dktc-form
+            = raw @post.the_content
+    .row
+      .col-md-12.dk-indent
+        .dk-section.dk-block
+          %iframe.dkcc-map{src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4228.883302116352!2d55.95070479947576!3d57.99728953034644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8ba1d5a2fe3e7%3A0x84c83a9c5483639f!2z0JTQstC-0YDQtdGGINCa0YPQu9GM0YLRg9GA0Ysg0LjQvC4g0KEu0Jwu0JrQuNGA0L7QstCw!5e0!3m2!1sru!2sru!4v1496872684438',
+                           frameborder: 0,
+                           allowfullscreen: true}
+    .row
+      .col-md-12.dk-indent
+        .dk-section.dk-block
+          = raw @post.get_fields_object[:contacts_anticor][:values]

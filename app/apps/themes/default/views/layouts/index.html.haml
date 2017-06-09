@@ -15,8 +15,8 @@
       / header
       %header#masthead.site-header{:role => "banner"}
         %a.home-link{:href => "#{current_site.the_url}", :rel => "home", :title => "#{current_site.the_title}"}
-          %h1.site-title= current_site.the_title
-          %h2.site-description= current_site.the_content
+          %h1.site-title.dk-vi-title= current_site.the_title
+          %h2.site-description.dk-vi-title= current_site.the_content
         #navbar.navbar
           %nav#site-navigation.navigation.main-navigation{:role => "navigation"}
             .menu-menu-1-container{:style => "float: left;"}
