@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  RAILS_DEFAULT_LOGGER = Logger.new('log/production.log')
+  config.log_level = :info
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -26,9 +27,9 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.debug = false
-  config.assets.compress = true
   config.assets.js_compressor = :uglifier
   config.assets.css_compressor = :sass
+  config.assets.compress = true
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -72,10 +73,12 @@ Rails.application.configure do
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
-
+  # Compress JavaScripts and CSS.
+  config.assets.js_compressor = :uglifier
+  config.assets.css_compressor = :sass
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
+  config.log_level = :debug
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
