@@ -1,3 +1,5 @@
+@import '../responsive/main_header';
+
 .dk-header {
   background: #fff; min-height: 150px; margin-top: 60px; line-height: 150px; font-size: 22px; position: relative; border-bottom: 1px solid #f6f6f6;
   img { margin-top: -15px; max-height: 105px; display: inline-block; }
@@ -7,6 +9,7 @@
     text-align: right; user-select: none; }
     .dk-toolbar .dkt-icons { margin-left: 14px; font-size: 14px; line-height: 50px; cursor: pointer; }
     i:hover { color: #da1711; }
+  .dk-toolbar-mobile { display: none; }
   .dk-flash-message-wrap {
     position: absolute; padding: 5% 0; font-size: 20px; line-height: normal; left: 0; right: 0; top: 0; bottom: 0; background: #fff;
     * { display: inline-block; vertical-align: top; }

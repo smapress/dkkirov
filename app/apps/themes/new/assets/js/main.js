@@ -11,4 +11,4 @@
 // about supported directives.
 //
 //= require jquery
-//= require camaleon_cms/bootstrap.min
+//= require bootstrap
