@@ -18,7 +18,7 @@
     .row
       .col-md-8.dk-indent
         .dk-section.dk-block
-          .dk-cont-title.dk-vi-title= post.the_title
+          %h3.dk-cont-title.dk-vi-title= post.the_title
           - if (fields[:info_col_m] || fields[:info_col_y] || fields[:info_col_ph])[:values].present?
             .dktp-info-box
               = render 'custom_fields/info_field', post: post, fields: info_fields

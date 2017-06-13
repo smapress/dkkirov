@@ -21,4 +21,5 @@
     display: block; line-height: 80%; font-size: 105%; text-align: right; background: #fff; box-shadow: -10px -10px 10px 0 #fff;
     &:hover { color: #da1711; }
   }
+  h3 { font-size: inherit; margin: 0; line-height: inherit; }
 }

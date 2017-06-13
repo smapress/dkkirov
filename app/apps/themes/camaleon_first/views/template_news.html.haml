@@ -13,7 +13,7 @@
     .row
       .col-md-9.dk-indent
         .dk-section.dk-block.dktd-block
-          .dk-cont-title= post.the_title
+          %h3.dk-cont-title= post.the_title
           .dk-more-content.dk-indent.js-more-content{data: {height: 260,
                                                      showtitle: 'Показать всю новость',
                                                      hidetitle: 'Скрыть'}}
@@ -23,7 +23,7 @@
         - if JSON.parse(post.get_fields_object[:news_docs][:values])[:file_name].present?
           .col-md-12.dk-indent
             .dk-section.dk-block.dktd-block
-              .dk-cont-title Вложенные файлы
+              %h3.dk-cont-title Вложенные файлы
               .dk-more-content.dk-indent.js-more-content{data: {height: 260,
                                                                 showtitle: 'Показать все файлы',
                                                                 hidetitle: 'Скрыть файлы'}}

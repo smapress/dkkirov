@@ -22,7 +22,7 @@
         .dk-section.dk-block.dk-more-content.js-more-content{data: {height: 350,
                                                              showtitle: 'Показать все описание',
                                                              hidetitle: 'Скрыть описание'}}
-          .dk-cont-title.dktp-title.dk-vi-title
+          %h3.dk-cont-title.dktp-title.dk-vi-title
             = post.the_title
           .dk-indent
             = this_user ? s_user.get_fields_object[:user_bio][:values] : raw(post.the_content)

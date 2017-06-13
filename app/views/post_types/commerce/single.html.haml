@@ -12,7 +12,7 @@
     .row
       .col-md-8
         .dk-section.dk-indent.dk-block.js-dynamic-ref
-          .dk-title
+          %h3.dk-title
             = @post.the_title
           .dkte-event-block
             - if @post.get_fields_object[:datatime_event].present?

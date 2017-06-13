@@ -15,7 +15,7 @@
               = post.the_thumb(class: 'dk-img img-responsive dktl-img')
       %div{class: event || news || docs || about || is_search? ? 'col-md-12' : 'col-md-8'}
         %a.dktl-item-title.dk-vi-title{href: post.the_url}
-          = truncate post.the_title, length: 45, escape: false
+          %h3= truncate post.the_title, length: 45, escape: false
         .dktl-item-content
           = post.the_content.html_safe
       .col-md-12

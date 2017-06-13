@@ -13,7 +13,7 @@
     .row
       .col-md-6.dk-indent
         .dk-section.dk-block.dktd-block
-          .dk-cont-title= post.the_title
+          %h3.dk-cont-title= post.the_title
           .dk-more-content.dk-indent.js-more-content{data: {height: 185,
                                                      showtitle: 'Показать все описание',
                                                      hidetitle: 'Скрыть описание'}}
@@ -23,7 +23,7 @@
 
       .col-md-6.dk-indent
         .dk-section.dk-block.dktd-block
-          .dk-cont-title= current_site.the_post_type('documents').the_title
+          %h3.dk-cont-title= current_site.the_post_type('documents').the_title
           .dk-more-content.dk-indent.js-more-content{data: {height: 185,
                                                      showtitle: 'Показать все документы',
                                                      hidetitle: 'Скрыть документы'}}
