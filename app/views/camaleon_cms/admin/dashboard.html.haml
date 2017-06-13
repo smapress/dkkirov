@@ -1,15 +1,27 @@
-- if can? :manage, :users
-  .page-content-wrap
-    .row
-      .col-md-12
+.page-content-wrap
+  .row
+    .col-md-12
+      - if can? :manage, :users
         .panel.panel-default
           .panel-heading
             %h3.panel-title= t('camaleon_cms.admin.sidebar.dashboard')
           .panel-body{:style => "min-height: 350px"}
-            %h3= current_theme.get_fields_object[:signature][:values]
+            %h3= current_theme.get_fields_object[:signature][:values][0]
             - r = {content: ""}; hooks_run("on_notification", r);
             #dashboard_notifications
               = raw r[:content]
             - r = {content: ""}; hooks_run("on_dashboard", r);
             #dashboard_items
               = raw r[:content]
+      - else
+        .panel-heading
+          %h1.text-center= current_site.the_title
+        .panel-body{:style => "min-height: 350px"}
+          %h3.text-center
+            %img{src: current_user.get_meta("avatar").present? ? current_user.get_meta("avatar") : asset_path("camaleon_cms/admin/img/no_image.jpg"),
+                 style: 'max-height: 350px'}
+          %h3.text-center= current_user.the_name
+          %h4.text-center= current_user.get_meta('slogan')
+          %h4.text-center
+            %a.dk-btn.btn{href: cama_admin_profile_edit_path,
+                          style: 'background: #fff !important; border: 1px solid #d2d6de;'} Редактировать информацию

@@ -50,7 +50,7 @@
                 .dk-main-info.dk-block
                   .dkmi-content
                     .dkmi-header.dkmi-title.dk-vi-title
-                      = this_user ? s_user.the_name : (post.try(:slug) == 'doska-pocheta' ? 'Фонарёв Леонид Михайлович': current_theme.get_fields_object[:signature][:values])
+                      = this_user ? s_user.the_name : (post.try(:slug) == 'doska-pocheta' ? 'Фонарёв Леонид Михайлович': current_theme.get_fields_object[:signature][:values][0])
                     - if this_user
                       .dkmi-item.dk-vi-title
                         = s_user.the_slogan

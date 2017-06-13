@@ -19,7 +19,7 @@
                                                      hidetitle: 'Скрыть описание'}}
             = raw post.the_content
             .dk-signature
-              = current_theme.get_fields_object[:signature][:values]
+              = current_theme.get_fields_object[:signature][:values][0]
 
       .col-md-6.dk-indent
         .dk-section.dk-block.dktd-block
