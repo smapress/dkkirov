@@ -1,7 +1,7 @@
 /*
-//= require ../plugins/jcarousel
-//= require ../plugins/readmore
-//= require ../plugins/magnific_popup
+//= require jcarousel
+//= require readmore
+//= require magnific_popup
 
 //= require ../modules/gallery
 

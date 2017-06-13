@@ -1,6 +1,6 @@
-//= require ../plugins/cookie
-//= require ../plugins/pace
-//= require ../plugins/flash_messages
+//= require cookie
+//= require pace
+//= require flash_messages
 
 //= require ../modules/nav_bar
 //= require ../modules/visual_impaired_bar

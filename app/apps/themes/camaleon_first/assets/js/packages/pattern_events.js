@@ -1,6 +1,6 @@
 /*
-//= require ../plugins/jcarousel
-//= require ../plugins/readmore
+//= require jcarousel
+//= require readmore
 
 //= require ../modules/more_content
 //= require ../modules/dynamic_align
