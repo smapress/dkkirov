@@ -1,6 +1,6 @@
 :ruby
   posts_events = @post_type.the_posts.paginate(page: params[:page], per_page: 6).eager_load(:metas)
-  posts = (@post_type.slug == 'commerce') ? posts_events : @posts
+  posts = (@post_type.slug == 'commerce') ? posts_events : ((@post_type.slug == 'news') ? @posts.latest : @posts)
 
 - content_for :style_head do
   = stylesheet_link_tag theme_asset('stylesheets/package/type_list')
