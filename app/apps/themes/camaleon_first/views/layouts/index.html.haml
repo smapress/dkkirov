@@ -1,11 +1,11 @@
 !!!
 %html{lang: 'ru'}
   %head
-    / META SECTION
     %meta{content: 'text/html; charset=utf-8', 'http-equiv' => 'Content-Type'}/
     %meta{content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}/
     %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}/
-    / END META SECTION
+    - if @object.present?
+      %link{href: @object.the_url, rel: 'canonical'}/
     = stylesheet_link_tag theme_asset 'stylesheets/package/init'
     = yield :style_head
     %link{href: '//fonts.googleapis.com/css?family=Montserrat%3A400%2C700&ver=4.2.2', rel: 'stylesheet'}/
