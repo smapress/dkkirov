@@ -36,6 +36,8 @@
   .alert-warning { color: #acacac; background-color: #fff; border-color: transparent; border-radius: 0; margin-top: -10px; }
   .pagination .active span { background-color: #da1711; color: #fff; }
   &.dk-light-overlay:before { content: ''; display: block; position: fixed; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.5); z-index: 20; }
+  .dk-block-error { min-height: 350px; position: relative; }
+  .dkbe-error { position: absolute; width: 100%; top: 50%; transform: translateY(-50%); }
 }
 
 @-webkit-keyframes loading {
