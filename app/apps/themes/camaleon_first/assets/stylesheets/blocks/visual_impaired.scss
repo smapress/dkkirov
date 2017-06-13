@@ -1,5 +1,5 @@
 .dk-visual-impaired {
-  position: relative; display: none; z-index: 21; user-select: none; line-height: 60px; overflow: hidden;
+  position: relative; display: none; z-index: 21; user-select: none; line-height: 61px; overflow: hidden;
   .dkvi-icon { margin-right: 14px; }
   .dkvi-item {
     display: inline-block; user-select: none; cursor: pointer; font-size: 16px;
@@ -9,7 +9,7 @@
   .dkvi-more-sub { display: none; }
   .dkvi-ms-item { display: inline-block; }
   .dkvi-exit {
-    position: absolute; width: 26px; height: 60px; right: 0; text-align: right; background: #fff; font-size: 16px; color: #777; box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9);
+    position: absolute; width: 26px; height: 61px; right: 0; text-align: right; background: #fff; font-size: 16px; color: #777; box-shadow: -10px 0 5px 0 rgba(255, 255, 255, 0.9);
     &:after { content: '✖'; right: 0; }
     &:hover { color: #da1711; cursor: pointer; }
   }
