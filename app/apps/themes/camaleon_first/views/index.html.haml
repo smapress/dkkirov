@@ -3,16 +3,6 @@
 - content_for :style_head do
   = stylesheet_link_tag theme_asset 'stylesheets/package/index'
 
-.col-md-12.dk-indent
-  .dk-services-line.dk-block
-    %h3.dk-title.dk-vi-title
-      %a.dk-head-link{href: current_site.the_post_type('services').the_url}
-        = current_site.the_post_type('services').the_title
-    .dk-gallery.js-gallery
-      %ul.dk-gallery-items.dk-events
-        - current_site.the_posts('services').decorate.each do |post|
-          %li.dk-gallery-img-wrap.js-gallery-item{data: {'visible-small' => 3, 'visible-large' => 4}}
-            %a.dk-col-line-link{href: post.the_url, title: post.the_title}= post.the_title
 .col-md-6.dk-indent
   .dk-events-line.dk-block.js-dk-events-line
     %h3.dk-title.dk-vi-title
@@ -26,6 +16,7 @@
               = truncate post.the_title, length: 40, escape: false
             %a.dk-gallery-img-item.js-vi-img{href: post.the_url, title: post.the_title}
               %img.dk-gallery-img{alt: post.the_title, src: post.the_thumb_url('')}
+
 .col-md-6.dk-indent
   .dk-news-line.dk-block.js-dk-news-line
     .dk-news-line-header
@@ -41,6 +32,7 @@
         .dknl-more
           %a.dknl-more-link{href: post.the_url, title: post.the_title} Подробнее
     %a.dknl-title-link.dknl-title-link-all{href: current_site.the_post_type('news').the_url} Смотреть все новости
+
 .col-md-12.dk-indent
   .dk-col-line.dk-block
     %h3.dk-title.dk-vi-title
@@ -58,11 +50,26 @@
                 = truncate post.the_content, length: 95, escape: false
               %a.dk-col-line-link{href: post.the_url, title: post.the_title} Подробнее
 
+.col-md-12.dk-indent
+  .dk-services-line.dk-block
+    %h3.dk-title.dk-vi-title
+      %a.dk-head-link{href: current_site.the_post_type('services').the_url}
+        = current_site.the_post_type('services').the_title
+    .dk-gallery.js-gallery
+      %ul.dk-gallery-items.dk-events
+        - current_site.the_posts('services').decorate.each do |post|
+          %li.dk-gallery-img-wrap.js-gallery-item{data: {'visible-small' => 3, 'visible-large' => 4}}
+            %a.dk-col-line-link{href: post.the_url, title: post.the_title}= post.the_title
+
+.dk-promo-info
+  = render 'partials/contacts_side', slug: :info_department, wrap: 'col-md-6', info_img: theme_asset('images/culture_department.png')
+  = render 'partials/contacts_side', slug: :info_gosuslugi, wrap: 'col-md-6', info_img: theme_asset('images/gosusligi_logo.png')
+
 - content_for :dk_sidebar do
-  = render 'partials/contacts_side', slug: :info_rating, icon: 'fa-check'
   = render 'partials/contacts_side', slug: :info_tel, icon: 'fa-phone'
   = render 'partials/contacts_side', slug: :info_email, icon: 'fa-envelope-o'
   = render 'partials/contacts_side', slug: :info_vk, icon: 'fa-vk'
   = render 'partials/contacts_side', slug: :info_youtube, icon: 'fa-youtube'
   = render 'partials/contacts_side', slug: :info_inst, icon: 'fa-instagram'
   = render 'partials/contacts_side', slug: :info_contact, icon: 'fa-home'
+  = render 'partials/contacts_side', slug: :info_rating, icon: 'fa-check'

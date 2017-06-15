@@ -1,4 +1,14 @@
 @media (min-width: 992px) and (max-width: 1199px) {
-  .dk-main-info .dkmi-header {  width: 77.333333% !important; }
-  .dkmi-map { height: 83px !important;  margin-top: 10px !important; }
+  .dk-main-info {
+    .dkmi-header { width: 77.333333% !important; }
+  }
+  .dk-promo-info .dk-main-info {
+    .dkmi-content { width: 90%; padding-left: 15px; }
+    .dk-img-item { width: 10%; }
+    .dkmi-header { width: 100% !important; }
+  }
+  .dk-info_rating .dk-main-info .dkmi-header {
+    width: 65% !important;
+  }
+  .dkmi-map { height: 227px !important;  margin-top: 10px !important; }
 }

@@ -6,7 +6,19 @@
   .dkmi-header { font-size: 125%; width: 57.3333333%; }
   .dkmi-item { color: #da1711; margin-top: 5px; word-break: break-word; }
   .dkmi-content { width: 100%; display: inline-block; }
-  .dkmi-map { width: 100%; margin-top: 25px; height: 219px; }
+  .dkmi-map { width: 100%; margin-top: 25px; height: 363px; }
   .fa-vk { color: #507299; }
   .fa-instagram { color: #027b83; }
 }
+.dk-promo-info {
+  .dk-main-info {
+    .dkmi-content { width: 90%; padding-left: 15px; }
+    .dk-img-item { width: 10%; }
+    .dkmi-header { width: 100%; }
+    .dkmi-content,
+    .dk-img-item { display: block; float: left; }
+    .dk-img-wrapper { height: 44px; }
+    .dk-img { max-height: 44px; }
+  }
+}
+.dk-info_tel .dk-main-info .dkmi-item { margin-top: 2px; }
