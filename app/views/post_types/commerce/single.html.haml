@@ -27,8 +27,6 @@
                   Стоимость:
                   = @post.the_price.gsub(/[^0-9,.]/, '').to_i
                   руб.
-                  .dkte-event-price.dk-indent
-                    %a{href: 'http://perm.kassy.ru/building/dvorec-kultury-im-s-m-kirova-13/29/', target: 'blank'} Купить билет
           .dkte-event-block
             .dkte-event-content.dk-indent
               = raw @post.the_content
