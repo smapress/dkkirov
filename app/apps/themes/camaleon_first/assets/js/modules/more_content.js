@@ -13,10 +13,15 @@ app.modules.moreContent = (function(self) {
         heightDef = $item.outerHeight(),
         heightItem = $item.data('height') || parseInt(($item).css('max-height')),
         showTitle = $item.data('showtitle'),
-        hideTitle = $item.data('hidetitle');
+        hideTitle = $item.data('hidetitle'),
+        wrap = $item.data('wrap');
 
       if (thumb && $.cookie('vibImages') != 'hidden') {
         heightItem = heightSide - thumb;
+      }
+
+      if (wrap) {
+        heightItem = heightItem - 56
       }
 
       if (heightDef > heightItem) {
