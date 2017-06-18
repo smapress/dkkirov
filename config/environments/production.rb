@@ -1,7 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   RAILS_DEFAULT_LOGGER = Logger.new('log/production.log')
-  config.log_level = :warn
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -77,7 +76,7 @@ Rails.application.configure do
   config.assets.css_compressor = :sass
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  config.log_level = :debug
+  config.log_level = :error
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
